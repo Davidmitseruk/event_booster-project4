@@ -1,2 +1,7 @@
-@import './common';
-@import './example';
+@import './base/reset';
+@import './base/common';
+@import './components/header';
+@import './components/hero';
+@import './components/footer';
+
+
