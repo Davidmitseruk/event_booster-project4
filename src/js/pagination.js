@@ -1,6 +1,6 @@
 const API_KEY = process.env.TICKETMASTER_API_KEY;
 const itemsPerPage = 20;
-const apiUrl = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apiKey}&size=${itemsPerPage}`;
+const apiUrl = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${API_KEY}&size=${itemsPerPage}`;
 
 let currentPage = 1;
 let totalPages = 1;
@@ -21,8 +21,8 @@ async function fetchItems(page) {
     totalPages = data.page.totalPages || 1;
 
     if (!items.length) {
-      itemsContainer.innerHTML = '<p>Події не знайдено</p>';
-      paginationContainer.innerHTML = '';
+      refs.itemsContainer.innerHTML = '<p>Події не знайдено</p>';
+      refs.paginationContainer.innerHTML = '';
       return;
     }
 
@@ -30,7 +30,10 @@ async function fetchItems(page) {
     setupPagination();
   } catch (error) {
     console.error('Помилка:', error);
-    itemsContainer.innerHTML = '<p>Помилка завантаження подій</p>';
+    refs.itemsContainer.innerHTML = '<p>Помилка завантаження подій</p>';
   }
 }
 
+function displayItems(items) {
+}
+function setupPagination() {}
