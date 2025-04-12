@@ -136,3 +136,4 @@ function setupPagination() {
 
 
 fetchItems(currentPage);
+// just for fetch
