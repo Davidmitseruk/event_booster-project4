@@ -131,7 +131,8 @@ function setupPagination() {
         fetchItems(currentPage);
     });
     refs.paginationContainer.appendChild(lastButton);
+  }
 }
-}
+
 
 fetchItems(currentPage);
