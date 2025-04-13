@@ -19,7 +19,7 @@ const templateSource = `
           <div class='hero__img-wrap'>
             <picture class='hero__img'>
               <source srcset="{{image.url}} 1x, {{image.url}} 2x" type="image/jpeg" />
-              <img src="{{image.url}}" alt="{{name}}" />
+              <img src="{{image.url}}" alt="{{name}}" class="hero__img-teg" />
             </picture>
           </div>
           <h2 class='hero__name'>{{name}}</h2>

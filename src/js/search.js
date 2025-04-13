@@ -36,7 +36,7 @@ function render(events) {
               <div class='hero__img-wrap'>
                 <picture class='hero__img'>
                   <source srcset="{{images.0.url}} 1x, {{images.0.url}} 2x" type="image/jpeg" />
-                  <img src="{{images.0.url}}" alt="{{name}}" />
+                  <img src="{{images.0.url}}" alt="{{name}}" class="hero__img-teg"/>
                 </picture>
               </div>
               <h2 class='hero__name'>{{name}}</h2>
