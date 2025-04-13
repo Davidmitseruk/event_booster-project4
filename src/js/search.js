@@ -22,12 +22,12 @@ async function search(value) {
     const filtered = events.filter(event =>
         event.name.toLowerCase().includes(value.toLowerCase())
     );
+    if (filtered.length === 0){
+      container.innerHTML = '<h2>There are not such events</h2>'
+  }
     render(filtered);
 }
 function render(events) {
-    if (filtered.length === 0){
-        container.innerHTML = '<h2>There are not such events</h2>'
-    }
     const templateSource = `
       <div class='hero__template'>
         <ul class='hero__list'>
