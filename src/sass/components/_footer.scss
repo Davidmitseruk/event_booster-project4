@@ -14,13 +14,28 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
 
     .footer__text {
-      color: rgba(255, 255, 255, 0.4);
+      margin-top: auto;
+      color: rgba(255, 255, 255, 0.25);
       font-size: 12px;
+    }
+
+    .footer__heart {
+      color: rgba(255, 0, 0, 0.4);
+    }
+
+    .footer__link {
+      color: rgba(255, 255, 255, 0.4);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: #fff;
+      }
     }
   }
 }
