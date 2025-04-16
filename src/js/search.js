@@ -1,5 +1,5 @@
 "use strict";
-const BASE_URL = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=L7VlP0GtWQZMHhIkOqz3A3FcxX8k8AWD&size=20';
+const BASE_URL = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=L7VlP0GtWQZMHhIkOqz3A3FcxX8k8AWD';
 const input = document.querySelector('.header__search');
 const container = document.querySelector('#hero__items');
 
@@ -10,7 +10,8 @@ input.addEventListener('input', (e) => {
 
 async function getEvents(){
     try {
-        const r = await fetch(BASE_URL);
+      let value = input.value;
+        const r = await fetch(`BASE_URL&keyword=${value}`);
         const data = await r.json();
         return data._embedded?.events || [];
     } catch (error){
@@ -22,7 +23,7 @@ async function getEvents(){
 async function search(value) {
     const events = await getEvents();
     const filtered = events.filter(event =>
-        event.name.toLowerCase().includes(value.toLowerCase())
+        event.keyword.includes(value.toLowerCase()) // || event.keyword.toLowerCase().includes(value.toLowerCase()) 
     );
 
     if (filtered.length === 0){
