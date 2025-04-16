@@ -1,32 +1,38 @@
-"use strict"
-const BASE_URL = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=	L7VlP0GtWQZMHhIkOqz3A3FcxX8k8AWD&size=20';
+"use strict";
+const BASE_URL = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=L7VlP0GtWQZMHhIkOqz3A3FcxX8k8AWD&size=20';
 const input = document.querySelector('.header__search');
-const container = document.querySelector('.hero__items');
+const container = document.querySelector('#hero__items');
+
 input.addEventListener('input', (e) => {
     e.preventDefault();
     search(input.value);
-    render();
 });
+
 async function getEvents(){
-try {
-    const r = await fetch(BASE_URL);
-    const data = await r.json();
-    return data._embedded?.events || [];
-}
-catch (error){
-console.error(error);
-}
+    try {
+        const r = await fetch(BASE_URL);
+        const data = await r.json();
+        return data._embedded?.events || [];
+    } catch (error){
+        console.error(error);
+        return [];
+    }
 };
+
 async function search(value) {
     const events = await getEvents();
     const filtered = events.filter(event =>
         event.name.toLowerCase().includes(value.toLowerCase())
     );
+
     if (filtered.length === 0){
-      container.innerHTML = '<h2>There are not such events</h2>'
-  }
+        container.innerHTML = '<h2>There are no such events</h2>';
+        return;
+    }
+
     render(filtered);
 }
+
 function render(events) {
     const templateSource = `
       <div class='hero__template'>
@@ -54,10 +60,10 @@ function render(events) {
     `;
     const template = Handlebars.compile(templateSource);
     const markUp = template(events);
-    container.insertAdjacentHTML('beforeend', markUp);
-};
-async function startApp(){
-    const allEvents = await getEvents();
-    render(allEvents);
-};
-startApp();
+    container.innerHTML = markUp;
+}
+// async function startApp(){
+//     const allEvents = await getEvents();
+//     render(allEvents);
+// };
+// startApp();
