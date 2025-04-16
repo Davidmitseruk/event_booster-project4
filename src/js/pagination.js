@@ -12,7 +12,7 @@ const refs = {
   paginationContainer: document.getElementById('hero__pagination'),
 };
 const templateSource = `
-  <div class='hero__template'>
+  <div class='hero__template' data-id="{{id}}">
     <ul class='hero__list'>
       {{#each items}}
         <li class='hero__item'>
@@ -68,6 +68,7 @@ function displayItems() {
       eventImages[0];
 
     return {
+      id: event.id,
       name: event.name || 'Без назви',
       date: event.dates?.start?.localDate || 'Дата не вказана',
       place: event._embedded?.venues?.[0]?.name || 'Місце не вказане',
