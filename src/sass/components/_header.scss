@@ -1,0 +1,46 @@
+.header {
+  &__logo{
+    position: absolute;
+  }
+  &__title {
+    font-family: 'Montserrat' sans-serif;
+    margin-top: 40px;
+    margin-bottom: 52px;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    color: #dc56c5;
+  }
+  &__sign-in {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+  }
+  &__sign-up {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+  }
+  &__country {
+    border-radius: 25px;
+    width: 270px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #939393;
+  }
+  &__search {
+    border-radius: 25px;
+    width: 270px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #939393;
+  }
+  &__inputs{
+    gap: 30px;
+    margin-bottom: 133px;
+  }
+}
