@@ -1,46 +1,61 @@
-.header {
-  &__logo{
-    position: absolute;
-  }
-  &__title {
-    font-family: 'Montserrat' sans-serif;
-    margin-top: 40px;
-    margin-bottom: 52px;
-    font-weight: 900;
-    font-size: 50px;
+.header{
+  background-color: black;
+
+&__logo{
+  position: absolute;
+}
+
+
+
+&__nav{
+    margin-left: 1300px;
+}
+&__central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+&__title {
     text-align: center;
-    color: #dc56c5;
-  }
-  &__sign-in {
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: #fff;
-  }
-  &__sign-up {
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: #fff;
-  }
-  &__country {
-    border-radius: 25px;
-    width: 270px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 16px;
-    color: #939393;
-  }
-  &__search {
-    border-radius: 25px;
-    width: 270px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 16px;
-    color: #939393;
-  }
-  &__inputs{
+    width: 588px;
+  font-family: 'Montserrat' sans-serif;
+  margin-top: 40px;
+  margin-bottom: 52px;
+  font-weight: 900;
+  font-size: 50px;
+  color: #dc56c5;
+}
+&__sign-in {
+    text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+&__sign-up {
+    text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+&__inputs{
+    display: flex;
+    flex-direction: row;
     gap: 30px;
     margin-bottom: 133px;
   }
+&__search {
+    text-align: center;
+  border-radius: 25px;
+  width: 270px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #939393;
+  border: 1px solid gray;
+}
 }
