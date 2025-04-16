@@ -1,22 +1,21 @@
 .footer {
   background-color: #000;
+  height: 120px;
   padding: 0 20px;
   color: #fff;
-  font-family: Arial, sans-serif;
-  background-image: url('path/to/your/image.jpg');
-  background-size: cover;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  height: 120px;
   display: flex;
   align-items: flex-end;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   .footer__content {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 10px;
     text-align: center;
+    padding-bottom: 10px;
 
     .footer__text {
       color: rgba(255, 255, 255, 0.25);
