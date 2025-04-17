@@ -1,10 +1,31 @@
 <footer class="footer">
-    <div class="footer__content">
-      <p class="footer__text">
-        © 2025 | All Rights Reserved | Developed with 
-        <span class="footer__heart">❤️</span> by 
-        <a href="#" class="footer__link">GoITeens Students</a>
-      </p>
-    </div>
-  </footer>
-  
+  <div class="footer__content">
+    <p class="footer__text">
+      © 2025 | All Rights Reserved | Developed with 
+      <span class="footer__heart">❤️</span> by 
+      <a href="#" class="footer__link">GoITeens Students</a>
+    </p>
+  </div>
+</footer>
+<div class="back-to-top" id="backToTop">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V6M5 13l7-7 7 7"></path>
+  </svg>
+</div>
+<script>
+  window.addEventListener('scroll', function () {
+    const backToTopButton = document.getElementById('backToTop');
+    if (window.scrollY > window.innerHeight / 2) {
+      backToTopButton.classList.add('visible');
+    } else {
+      backToTopButton.classList.remove('visible');
+    }
+  });
+  document.getElementById('backToTop').addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
