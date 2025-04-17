@@ -1,7 +1,6 @@
 .header {
   background-color: black;
 
-
   &__logo {
     position: absolute;
   }
@@ -12,12 +11,10 @@
     gap: 15px;
   }
 
-
-&__logo{
-  position: absolute;
-}
-&__nav{
-
+  &__logo {
+    position: absolute;
+  }
+  &__nav {
     margin-left: 1300px;
   }
   &__central {
@@ -67,5 +64,164 @@
     font-size: 16px;
     color: #939393;
     border: 1px solid gray;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
   }
+  &__country{
+    text-align: center;
+        border-radius: 25px;
+        width: 270px;
+        height: 40px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #939393;
+        border: 1px solid gray;
+        backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.2);
+  }
+  &__btn{
+    cursor: pointer;
+    margin-top: -100px;
+    margin-bottom: 89px;
+    text-align: center;
+    border-radius: 25px;
+    width: 134px;
+    height: 24px;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+      border: 2px solid #dc56c5;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  &__logo{
+    position: absolute;
+  }
+   
+    &__sign{
+      display: none;
+    }
+    
+
+
+  .header{
+      background-color: black;
+  }
+
+  &__central{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+  }
+  &_title {
+      text-align: center;
+      width: 285px;
+    font-family: 'Montserrat' sans-serif;
+    margin-top: 40px;
+    margin-bottom: -15px;
+    font-weight: 900;
+    font-size: 18px;
+    color: #dc56c5;
+  }
+&__sign-in {
+      text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+  }
+  &_sign-up {
+      text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__inputs{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 133px;
+    }
+  &__search {
+      text-align: center;
+    border-radius: 25px;
+    min-width: 270px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #939393;
+    border: 1px solid gray;
+  }
+  &__country {
+      text-align: center;
+      border-radius: 25px;
+      min-width: 270px;
+      height: 40px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #939393;
+      border: 1px solid gray;
+    }
+   &__btn{
+    cursor: pointer;
+    margin-top: -140px;
+    margin-bottom: 59px;
+    text-align: center;
+    border-radius: 25px;
+    width: 134px;
+    height: 24px;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+      border: 2px solid #dc56c5;;
+   }
+}
+
+
+
+
+
+
+
+body.light-theme {
+background-color: #ffffff;
+color: #000000;
+}
+
+body.light-theme .header {
+background-image: none;
+background: url(./src/mercedes-benz_s-class__588754625hd.webp);
+}
+
+body.light-theme .header__title {
+color: #000000;
+}
+
+body.light-theme .header__btn {
+background: rgba(255, 255, 255, 0.4);
+color: #000;
+border-color: #333;
+}
+
+body.light-theme .header__search,
+body.light-theme .header__country {
+background: rgba(0, 0, 0, 0.1);
+color: #333;
+border: 1px solid #aaa;
+}
+
+body.light-theme .header__sign-in,
+body.light-theme .header__sign-up {
+color: #000;
 }
