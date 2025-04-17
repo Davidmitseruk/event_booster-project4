@@ -1,6 +1,7 @@
 .header {
   background-color: black;
 
+
   &__logo {
     position: absolute;
   }
@@ -11,7 +12,12 @@
     gap: 15px;
   }
 
-  &__nav {
+
+&__logo{
+  position: absolute;
+}
+&__nav{
+
     margin-left: 1300px;
   }
   &__central {
