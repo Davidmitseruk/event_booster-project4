@@ -11,7 +11,7 @@ input.addEventListener('input', (e) => {
 async function getEvents(){
     try {
       let value = input.value;
-        const r = await fetch(`BASE_URL&keyword=${value}`);
+      const r = await fetch(`${BASE_URL}&keyword=${value}`);
         const data = await r.json();
         return data._embedded?.events || [];
     } catch (error){
@@ -23,7 +23,7 @@ async function getEvents(){
 async function search(value) {
     const events = await getEvents();
     const filtered = events.filter(event =>
-        event.keyword.includes(value.toLowerCase()) // || event.keyword.toLowerCase().includes(value.toLowerCase()) 
+        event.name.includes(value.toLowerCase()) // || event.keyword.toLowerCase().includes(value.toLowerCase()) 
     );
 
     if (filtered.length === 0){
