@@ -6,10 +6,10 @@ const container = document.querySelector('#hero__items');
 
 let timeOut;
 
-input.addEventListener('input', async (e) => {
+input.addEventListener('input', (e) => {
   e.preventDefault();
 clearTimeout(timeOut);
-timeOut = setTimeout(() => {
+timeOut = setTimeout(async () => {
   await search(input.value.trim());
 }, 500);
 });
