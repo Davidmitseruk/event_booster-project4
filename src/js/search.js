@@ -1,15 +1,16 @@
-"use strict";
-const BASE_URL = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=L7VlP0GtWQZMHhIkOqz3A3FcxX8k8AWD';
+'use strict';
+const BASE_URL =
+  'https://app.ticketmaster.com/discovery/v2/events.json?apikey=L7VlP0GtWQZMHhIkOqz3A3FcxX8k8AWD';
 const input = document.querySelector('.header__search');
 const container = document.querySelector('#hero__items');
 
 let timeOut;
 
-input.addEventListener('input', (e) => {
+input.addEventListener('input', async (e) => {
   e.preventDefault();
 clearTimeout(timeOut);
 timeOut = setTimeout(() => {
-  search(input.value.trim());
+  await search(input.value.trim());
 }, 500);
 });
 
@@ -40,26 +41,22 @@ async function search(value) {
     const filtered = events.filter(event =>
         event.name.toLowerCase().includes(value.toLowerCase())
     );
-
-    if (filtered.length === 0){
-        container.innerHTML = '<h2>There are no such events</h2>';
-        return;
-    }
+  if (filtered.length === 0) {
+    container.innerHTML = '<h2>There are no such events</h2>';
+    return;
+  }
 
     render(filtered.slice(0, 20)); // (filtered.slice(0, 20))
 }
 
 function render(events) {
-    const templateSource = `
-      <div class='hero__template'>
+  const templateSource = `
+      <div class='hero__template' >
         <ul class='hero__list'>
           {{#each this}}
-            <li class='hero__item'>
+            <li class='hero__item' data-id="{{id}}">
               <div class='hero__img-wrap'>
-                <picture class='hero__img'>
-                  <source srcset="{{images.0.url}} 1x, {{images.0.url}} 2x" type="image/jpeg" />
                   <img src="{{images.0.url}}" alt="{{name}}" class="hero__img-teg"/>
-                </picture>
               </div>
               <h2 class='hero__name'>{{name}}</h2>
               <p class='hero__date'>{{dates.start.localDate}}</p>
@@ -78,3 +75,9 @@ function render(events) {
     const markUp = template(events);
     container.innerHTML = markUp;
 }
+// async function startApp(){
+//     const allEvents = await getEvents();
+//     render(allEvents);
+// };
+// startApp();
+
