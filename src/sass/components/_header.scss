@@ -98,19 +98,17 @@
 }
 
 @media screen and (max-width: 779px) {
-  &__logo{
+  .header{ &__logo{
     position: absolute;
   }
    
     &__sign{
       display: none;
-    }
-    
-
+    }}
 
   .header{
       background-color: black;
-  }
+  
 
   &__central{
       display: flex;
@@ -187,7 +185,7 @@
       border: 2px solid #dc56c5;;
    }
 }
-
+}
 
 
 
@@ -201,7 +199,7 @@ color: #000000;
 
 body.light-theme .header {
 background-image: none;
-background: url(./src/mercedes-benz_s-class__588754625hd.webp);
+// background: url(./src/mercedes-benz_s-class__588754625hd.webp);
 }
 
 body.light-theme .header__title {
