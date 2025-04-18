@@ -3,27 +3,42 @@ const BASE_URL = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=L
 const input = document.querySelector('.header__search');
 const container = document.querySelector('#hero__items');
 
+let timeOut;
+
 input.addEventListener('input', (e) => {
-    e.preventDefault();
-    search(input.value);
+  e.preventDefault();
+clearTimeout(timeOut);
+timeOut = setTimeout(() => {
+  search(input.value.trim());
+}, 500);
 });
 
-async function getEvents(){
+async function getAllEvents(keyword) {
+    const allEvents = [];
+    let page = 0;
+    let totalPages = 1;
+
     try {
-      let value = input.value;
-      const r = await fetch(`${BASE_URL}&keyword=${value}`);
-        const data = await r.json();
-        return data._embedded?.events || [];
-    } catch (error){
-        console.error(error);
-        return [];
+        while (page < totalPages) {
+            const r = await fetch(`${BASE_URL}&keyword=${keyword}&size=20&page=${page}`);
+            const data = await r.json();
+            const events = data._embedded?.events || [];
+            allEvents.push(...events);
+
+            totalPages = data.page.totalPages;
+            page++;
+        }
+    } catch (error) {
+        console.log(error);
     }
-};
+
+    return allEvents;
+}
 
 async function search(value) {
-    const events = await getEvents();
+    const events = await getAllEvents(value);
     const filtered = events.filter(event =>
-        event.name.includes(value.toLowerCase()) // || event.keyword.toLowerCase().includes(value.toLowerCase()) 
+        event.name.toLowerCase().includes(value.toLowerCase())
     );
 
     if (filtered.length === 0){
@@ -31,7 +46,7 @@ async function search(value) {
         return;
     }
 
-    render(filtered);
+    render(filtered.slice(0, 20)); // (filtered.slice(0, 20))
 }
 
 function render(events) {
@@ -63,8 +78,3 @@ function render(events) {
     const markUp = template(events);
     container.innerHTML = markUp;
 }
-// async function startApp(){
-//     const allEvents = await getEvents();
-//     render(allEvents);
-// };
-// startApp();
