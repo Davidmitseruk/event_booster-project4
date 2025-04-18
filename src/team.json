@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "name": "David Mitseruk",
+    "position": "Team Lead",
+    "contribution": [],
+    "additionally": ""
+  },
+  {
+    "id": 2,
+    "name": "Nika Deeva",
+    "position": "Scrummaster",
+    "contribution": [],
+    "additionally": ""
+  },
+  {
+    "id": 3,
+    "name": "Yulia Pedchenko",
+    "position": "Frontend Developer",
+    "contribution": [
+      "Pagination",
+      "Styles for the modal",
+      "Designing a modal about a team"
+    ],
+    "additionally": "She loves cats, JavaScript, and solving problems! As soon as she looks at the layout, she immediately sees the finished code in her head. She is always ready to help and explain if someone doesn't understand something."
+  },
+  {
+    "id": 4,
+    "name": "Roman Kaptar",
+    "position": "Frontend Developer",
+    "contribution": [],
+    "additionally": ""
+  },
+  {
+    "id": 5,
+    "name": "Artur Rasko",
+    "position": "Frontend Developer",
+    "contribution": [],
+    "additionally": ""
+  },
+  {
+    "id": 6,
+    "name": "Daniil Pansovoi",
+    "position": "Frontend Developer",
+    "contribution": [],
+    "additionally": ""
+  }
+]
