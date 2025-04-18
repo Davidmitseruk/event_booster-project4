@@ -1,0 +1,48 @@
+a{
+    text-decoration: none;
+}
+ul,
+ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+  
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    // width: 1246px;
+    width: 310px;
+}
+@media screen and (min-width: 640px){
+    .container{
+        width: 640px;
+    }
+}
+@media screen and (min-width: 1246px){
+    .container{
+        width: 1246px;
+    }
+}
