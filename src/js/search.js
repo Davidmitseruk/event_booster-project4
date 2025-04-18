@@ -4,35 +4,49 @@ const BASE_URL =
 const input = document.querySelector('.header__search');
 const container = document.querySelector('#hero__items');
 
-input.addEventListener('input', async e => {
+let timeOut;
+
+input.addEventListener('input', (e) => {
   e.preventDefault();
-  await search(input.value);
+clearTimeout(timeOut);
+timeOut = setTimeout(async () => {
+  await search(input.value.trim());
+}, 500);
 });
 
-async function getEvents() {
-  try {
-    let value = input.value;
-    const r = await fetch(`${BASE_URL}&keyword=${value}`);
-    const data = await r.json();
-    return data._embedded?.events || [];
-  } catch (error) {
-    console.error(error);
-    return [];
-  }
+async function getAllEvents(keyword) {
+    const allEvents = [];
+    let page = 0;
+    let totalPages = 1;
+
+    try {
+        while (page < totalPages) {
+            const r = await fetch(`${BASE_URL}&keyword=${keyword}&size=20&page=${page}`);
+            const data = await r.json();
+            const events = data._embedded?.events || [];
+            allEvents.push(...events);
+
+            totalPages = data.page.totalPages;
+            page++;
+        }
+    } catch (error) {
+        console.log(error);
+    }
+
+    return allEvents;
 }
 
 async function search(value) {
-  const events = await getEvents();
-  const filtered = events.filter(
-    event => event.name.includes(value.toLowerCase()) // || event.keyword.toLowerCase().includes(value.toLowerCase())
-  );
-
+    const events = await getAllEvents(value);
+    const filtered = events.filter(event =>
+        event.name.toLowerCase().includes(value.toLowerCase())
+    );
   if (filtered.length === 0) {
     container.innerHTML = '<h2>There are no such events</h2>';
     return;
   }
 
-  render(filtered);
+    render(filtered.slice(0, 20)); // (filtered.slice(0, 20))
 }
 
 function render(events) {
@@ -57,12 +71,13 @@ function render(events) {
         </ul>
       </div>
     `;
-  const template = Handlebars.compile(templateSource);
-  const markUp = template(events);
-  container.innerHTML = markUp;
+    const template = Handlebars.compile(templateSource);
+    const markUp = template(events);
+    container.innerHTML = markUp;
 }
 // async function startApp(){
 //     const allEvents = await getEvents();
 //     render(allEvents);
 // };
 // startApp();
+
