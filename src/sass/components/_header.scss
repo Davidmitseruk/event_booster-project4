@@ -1,21 +1,15 @@
 .header {
   background-color: black;
-
   &__logo {
     position: absolute;
   }
-
   &__sign {
     display: flex;
     justify-content: end;
     gap: 15px;
   }
-
   &__logo {
     position: absolute;
-  }
-  &__nav {
-    margin-left: 1300px;
   }
   &__central {
     display: flex;
@@ -53,7 +47,6 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
-    margin-bottom: 133px;
   }
   &__search {
     text-align: center;
@@ -81,12 +74,9 @@
   }
   &__btn {
     cursor: pointer;
-    margin-top: -100px;
     margin-bottom: 89px;
     text-align: center;
     border-radius: 25px;
-    width: 134px;
-    height: 24px;
     font-family: 'Montserrat' sans-serif;
     font-weight: 500;
     font-size: 13px;
@@ -94,6 +84,40 @@
     color: #fff;
     background: rgba(0, 0, 0, 0.4);
     border: 2px solid #dc56c5;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    padding-left: 10px;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, padding 0.3s ease;
+  }
+  &__btn-text {
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  &__circle {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50px;
+     transition: background-color 0.3s ease, margin 0.5s ease;
+  }
+}
+.header__btn-dark {
+  .header__circle {
+    background-color: #fff;
+    margin-left: 6px;
+    margin-right: 0;
+  }
+}
+.header__btn-light {
+  order: 1;
+  padding-left: 4px;
+  padding-right: 10px;
+  .header__circle {
+    order: -1;
+    margin-left: 0;
+    margin-right: 6px;
+    background-color: #0E0E0E;
   }
 }
 

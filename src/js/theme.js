@@ -2,10 +2,15 @@ const toggleButton = document.getElementById("themeToggle");
 
 toggleButton.addEventListener("click", () => {
   document.body.classList.toggle("light-theme");
+  const text = document.querySelector('.header__btn-text');
 
   if (document.body.classList.contains("light-theme")) {
-    toggleButton.textContent = "DARK THEME";
+    text.textContent = `WHITE THEME`;
+    toggleButton.classList.add('header__btn-light');
+    toggleButton.classList.remove('header__btn-dark');
   } else {
-    toggleButton.textContent = "BLACK THEME";
+    text.textContent = `BLACK THEME`;
+    toggleButton.classList.add('header__btn-dark');
+    toggleButton.classList.remove('header__btn-light');
   }
 });
