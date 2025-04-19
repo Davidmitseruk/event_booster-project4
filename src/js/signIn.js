@@ -1,7 +1,7 @@
-"use strict"
+
 (() => { 
     const refs = { 
-      openModalBtn: document.querySelector("[data-singIn-open]"), 
+      openModalBtn: document.querySelector("[data-signIn-open]"), 
       closeModalBtn: document.querySelector("[data-signIn-close]"), 
       modal: document.querySelector("[data-signIn]"), 
     }; 
