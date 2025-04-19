@@ -11,6 +11,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 128px;
+    margin: 30px 5px;
   }
   &__img-wrap {
     border-radius: 50px 0;
@@ -28,8 +29,12 @@
     font-size: 14px;
     text-align: center;
     color: #dc56c5;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
   }
   &__date {
+    padding-bottom: 5px;
     font-weight: 400;
     font-size: 14px;
     text-align: center;
@@ -46,10 +51,6 @@
     &__item {
       max-width: 180px;
     }
-    // &__img-teg {
-    //   width: 180px;
-    //   height: 227px;
-    // }
     &__name {
       font-size: 16px;
     }
@@ -64,5 +65,8 @@
 @media screen and (min-width: 1200px) {
   .hero {
     padding-bottom: 80px;
+    &__item{
+      margin: 30px 20px;
+    }
   }
 }
