@@ -9,7 +9,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms;
   border-radius: 150px 0;
-  background-color: #fff2fd;
+  background-color: $modalBackground;
 
   &__close-button {
     margin-top: 8px;
@@ -32,7 +32,7 @@
   &__title{
     font-weight: 600;
 font-size: 20px;
-color: #dc56c5;
+color: $title;
 text-align: center;
 padding-top: 70px;
 padding-bottom: 20px;
@@ -59,17 +59,17 @@ justify-content: center;
     flex-direction: column;
     font-weight: 500;
 font-size: 16px;
-color: #4c00fe;
+color: $modalText;
 margin-bottom: 25px;
   }
   &__field{
-    border: 1px solid #4c00fe;
+    border: 1px solid $modalText;
 border-radius: 5px;
 padding: 10px;
 max-width: 222px;
 font-weight: 500;
 font-size: 16px;
-color: #b799ff;
+color: $modalInputText;
 margin-top: 10px;
   }
 &__btn-wrap{
@@ -77,12 +77,12 @@ margin-top: 10px;
     justify-content: center;
 }
 &__btn{
-    border: 1px solid #4c00fe;
+    border: 1px solid $modalText;
 border-radius: 5px;
 padding: 10px 16px;
 font-weight: 500;
 font-size: 16px;
-color: #4c00fe;
+color: $modalText;
 background-color: transparent;
 margin-top: 40px;
 margin-bottom: 70px;
