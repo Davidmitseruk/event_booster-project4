@@ -1,4 +1,4 @@
-4731
+4732
 83C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\images\pic-mobile@1x.png133894687960369568 0
 85C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\parcel\lib\cli.js133890089860744470 0
 102C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\nth-check\lib\esm\compile.d.ts.map133890089868021305 0
@@ -20,7 +20,7 @@
 85C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\tslib\LICENSE.txt133890089868264205 0
 87C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\posthtml\lib\api.js133890089855694079 0
 62C:\Users\likki\Desktop\GoITeens\event_booster-project4\.github133889192729631392 1
-67C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\index.js133895177834871453 0
+67C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\index.js133895186684573370 0
 112C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\filereadersync.js133890089898396130 0
 100C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\react-error-overlay\lib\index.js133890089864596487 0
 73C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\acorn133890089867902696 1
@@ -58,7 +58,7 @@
 66C:\Users\likki\Desktop\GoITeens\event_booster-project4\.prettierrc133889192729788250 0
 113C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\permissions-api.js133890089902611634 0
 76C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\mdn-data133890089877457355 1
-59C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist133895180368469593 1
+59C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist133895220555596352 1
 66C:\Users\likki\Desktop\GoITeens\event_booster-project4\.htmlnanorc133889192729631392 0
 64C:\Users\likki\Desktop\GoITeens\event_booster-project4\.parcelrc133889192729788250 0
 99C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\posthtml-match-helper\readme.md133890089856876922 0
@@ -66,6 +66,9 @@
 94C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\yaml\browser\dist\types.js133890089882732950 0
 61C:\Users\likki\Desktop\GoITeens\event_booster-project4\assets133889192729960257 1
 78C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\picocolors133890089863548603 1
+87C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\sass\components\_signUp.scss133895186841189470 0
+115C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\optimizer-terser\src\TerserOptimizer.js133890089858103964 0
+84C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\terser\lib\utils133890089880282867 1
 94C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\csso\lib\replace\String.js133890089882918249 0
 62C:\Users\likki\Desktop\GoITeens\event_booster-project4\.sassrc133889192729788250 0
 92C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\nth-check\lib\index.d.ts133890089876197630 0
@@ -141,7 +144,7 @@
 100C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\regenerator-runtime\package.json133890089859860675 0
 93C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\browserslist\package.json133890089866598376 0
 101C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\htmlnano\docs\docs\040-presets.md133890089886441493 0
-69C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\index.html133895177792679260 0
+69C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\index.html133895185902344483 0
 114C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\transformer-js\src\esmodule-helpers.js133890089858275218 0
 61C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\js133895177835160477 1
 115C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@babel\helper-validator-identifier\package.json133890089863327977 0
@@ -155,7 +158,7 @@
 80C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\svgo\LICENSE133890089854606122 0
 118C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\css-media-resolution.js133890089895076894 0
 103C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\css-tree\lib\syntax\function\var.js133890089891989557 0
-67C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\partials133895177835529267 1
+67C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\partials133895189628480058 1
 99C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\regions\CA.js133890089888812617 0
 110C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\node_modules\node-addon-api\nothing.c133890089854578360 0
 88C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\electron-to-chromium133890089869904847 1
@@ -170,7 +173,7 @@
 116C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest.c133890089886785565 0
 107C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\innertext.js133890089900040836 0
 82C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\yaml\scalar.js133890089878507246 0
-74C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\sass\components133895178875536333 1
+74C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\sass\components133895186841189470 1
 85C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\svgo\lib\types.ts133890089888956472 0
 92C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\watcher\index.js133890089878618685 0
 104C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\css-tree\lib\lexer\prepare-tokens.js133890089890391588 0
@@ -188,7 +191,7 @@
 100C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\nth-check\lib\esm\parse.d.ts.map133890089871898962 0
 108C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\source-map-js\lib\source-map-consumer.js133890089866893601 0
 104C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\node-addon-api\napi-inl.deprecated.h133890089862368518 0
-73C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\sass\index.css133895180152884708 0
+73C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\sass\index.css133895187192371000 0
 93C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\css\node\index.js133890089860207421 0
 123C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\watcher\prebuilds\linux-x64\node.napi.musl.node133890089887249886 0
 147C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\parcel-reporter-clean-dist\test\fixtures\packageV1\files\embed\embed2\file3.txt133890089885920627 0
@@ -197,7 +200,7 @@
 115C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@swc\helpers\lib\_class_apply_descriptor_get.js133890089869892544 0
 77C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\dist133890089891989557 1
 96C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\optimizer-terser\lib133890089855562873 1
-77C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\sass\index.css.map133895180152884708 0
+77C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\sass\index.css.map133895187192371000 0
 97C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\posthtml-include\lib\index.js133890089855681981 0
 94C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\watcher\src\shared133890089873252610 1
 100C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\cosmiconfig\dist\ExplorerSync.js133890089861364405 0
@@ -207,7 +210,7 @@
 81C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\msgpackr\dist133890089869162301 1
 85C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\nan\nan_private.h133890089871870240 0
 113C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\htmlnano\lib\modules\removeEmptyAttributes.js133890089876399253 0
-74C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\sass\index.scss133889192730015312 0
+74C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\sass\index.scss133895187191355431 0
 107C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\flow-root.js133890089898595332 0
 97C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\posthtml-parser\dist\index.js133890089857325111 0
 76C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\css-tree133890089892280933 1
@@ -237,17 +240,17 @@
 94C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\utility-types\package.json133890089864396004 0
 112C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\workers\lib\process\ProcessWorker.js133890089876753318 0
 98C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\optimizer-htmlnano\src133890089862149690 1
-79C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\partials\header.html133895177835539211 0
+79C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\partials\header.html133895184368065682 0
 104C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\webnfc.js133890089906765561 0
 95C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\css-tree\lib\utils\clone.js133890089871870240 0
 119C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_copy.c133890089880515215 0
-80C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\partials\sign-in.html133893813695982240 0
+80C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\partials\sign-in.html133895220400337245 0
 85C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\dependencies133890089891077128 1
 93C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\terser\lib\utils\index.js133890089880433571 0
 74C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@babel133890089837925943 1
-80C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\partials\sing-up.html133893814795180581 0
-96C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\electron-to-chromium\LICENSE133890089854716151 0
-77C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\is-number133890089858275218 1
+91C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\is-extglob\package.json133890089854694325 0
+84C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\binding.gyp133890089889849124 0
+80C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\partials\sign-up.html133895220338194786 0
 99C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\regions\GI.js133890089899180367 0
 101C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\electron-to-chromium\package.json133890089868589284 0
 96C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\fast-glob\out\utils\index.js133890089869950383 0
@@ -275,11 +278,11 @@
 99C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\regions\LA.js133890089900945212 0
 89C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\sass\types\index.d.ts133890089887729016 0
 100C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\msgpackr-extract\src\extract.cpp133890089855759883 0
-71C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\js\signIn.js133895177835010988 0
+71C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\js\signIn.js133895184911663222 0
 78C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\is-extglob133890089858351101 1
 87C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\has-flag\index.d.ts133890089855404533 0
 118C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\spellcheck-attribute.js133890089904160986 0
-71C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\js\signUp.js133895177835020941 0
+71C:\Users\likki\Desktop\GoITeens\event_booster-project4\src\js\signUp.js133895184729497898 0
 106C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\utility-types\dist\mapped-types.js.map133890089867974329 0
 74C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\base-x133890089858767337 1
 95C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\sass\types\value\color.d.ts133890089886967196 0
@@ -539,6 +542,7 @@
 109C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\optimizer-css\src\CSSOptimizer.js133890089858103964 0
 116C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\unhandledrejection.js133890089905871514 0
 87C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\yaml\browser\seq.js133890089880282867 0
+77C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\is-number133890089858275218 1
 88C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@nodelib\fs.stat\out133890089870603902 1
 77C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\js-tokens133890089860777702 1
 115C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\core\test\fixtures\main-format-mismatch133890089895167943 1
@@ -598,7 +602,6 @@
 96C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\nth-check\lib\compile.js.map133890089868589284 0
 93C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\chalk\source\templates.js133890089857511829 0
 101C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\plugin\src\PluginAPI.d.ts133890089862149690 0
-77C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.ffe974aa.js133895180368286233 0
 91C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\hash\browser.js133890089857350120 0
 98C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\source-map-js\lib\array-set.js133890089855681981 0
 82C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\node-addon-api133890089874253591 1
@@ -1247,8 +1250,6 @@
 91C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\terser\lib\transform.js133890089885920627 0
 98C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\nth-check\lib\esm\compile.d.ts133890089875502737 0
 97C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@swc\helpers\lib\_inherits.js133890089882436215 0
-115C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\optimizer-terser\src\TerserOptimizer.js133890089858103964 0
-84C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\terser\lib\utils133890089880282867 1
 106C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\terser\lib\utils\first_in_statement.js133890089878797522 0
 99C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\plugin\src\PluginAPI.js133890089858103964 0
 121C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\comparedocumentposition.js133890089890735567 0
@@ -1393,11 +1394,6 @@
 92C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\utils\test\input133890089887799493 1
 114C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\speech-synthesis.js133890089904147109 0
 94C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\svgo\plugins\reusePaths.js133890089886947260 0
-107C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\utils\src\relativeBundlePath.js133890089886149175 0
-92C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\packager-raw\src133890089857689753 1
-88C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\htmlnano\lib\presets133890089877292253 1
-84C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\svgo\lib\svgo.js133890089888294911 0
-104C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@swc\helpers\src\_sliced_to_array.js133890089893549199 0
 100C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\svgo\plugins\_applyTransforms.js133890089857936519 0
 121C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\document-evaluate-xpath.js133890089897711461 0
 146C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\side-effects-false-glob\b133890089882918249 1
@@ -1414,6 +1410,11 @@
 81C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\svgo\lib\svgo133890089888872521 1
 89C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\svgo\lib\svgo-node.js133890089887358626 0
 94C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\nullthrows\nullthrows.d.ts133890089856876922 0
+107C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\utils\src\relativeBundlePath.js133890089886149175 0
+92C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\packager-raw\src133890089857689753 1
+88C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\htmlnano\lib\presets133890089877292253 1
+84C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\svgo\lib\svgo.js133890089888294911 0
+104C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@swc\helpers\src\_sliced_to_array.js133890089893549199 0
 81C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\nan\nan_new.h133890089869429274 0
 122C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\optimizer-image\parcel-image.darwin-arm64.node133890089874033595 0
 84C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\svgo\lib\xast.js133890089888485893 0
@@ -1621,6 +1622,7 @@
 93C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\run-parallel\package.json133890089856799720 0
 87C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\reusify\.travis.yml133890089856876922 0
 174C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\side-effects-package-redirect-up\foo\bar\package.json133890089891408219 0
+81C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.8eba4bb6.js.map133895220555494415 0
 78C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\fastq\test133890089867974329 1
 86C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\reusify\benchmarks133890089867263234 1
 83C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\reusify\LICENSE133890089858535550 0
@@ -2083,8 +2085,6 @@
 91C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\nan\doc\v8_internals.md133890089884062382 0
 97C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\msgpackr-extract\package.json133890089862064933 0
 116C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\keyboardevent-code.js133890089900665948 0
-95C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\cosmiconfig\dist\types.d.ts133890089880982921 0
-99C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\regions\CY.js133890089897413950 0
 102C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\msgpackr-extract\node_modules\.bin133890089908105156 1
 130C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages133890089863800663 1
 137C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\bin.js133890089855653344 0
@@ -2113,6 +2113,7 @@
 116C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@babel\highlight\node_modules\color-name\LICENSE133890089859761109 0
 91C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\css-select\lib\index.js133890089865866411 0
 100C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\css-what\lib\commonjs\index.d.ts133890089874150684 0
+77C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.18afc084.js133895220555435340 0
 122C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-test133890089908111879 0
 126C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-test.cmd133890089908111879 0
 126C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-test.ps1133890089908111879 0
@@ -2196,8 +2197,6 @@
 92C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb-win32-x64\README.md133890089856410115 0
 113C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\package-manager\src\installPackage.js133890089874477686 0
 106C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\css-tree\lib\syntax\node\MediaQuery.js133890089888552912 0
-91C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\is-extglob\package.json133890089854694325 0
-84C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\binding.gyp133890089889849124 0
 80C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\deps.ts133890089892391575 0
 118C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\prefers-color-scheme.js133890089902969698 0
 102C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\css-tree\lib\syntax\scope\index.js133890089887358626 0
@@ -2240,7 +2239,7 @@
 112C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\node_modules\node-addon-api\except.gypi133890089858468181 0
 111C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\node_modules\node-addon-api\LICENSE.md133890089874150684 0
 122C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\node_modules\node-addon-api\napi-inl.deprecated.h133890089862593938 0
-70C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.html133895180368286233 0
+70C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.html133895220555435340 0
 111C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\node_modules\node-addon-api\napi-inl.h133890089867403255 0
 114C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\lmdb\node_modules\node-addon-api\noexcept.gypi133890089860859349 0
 142C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\source-map\parcel_sourcemap_node\artifacts\index.darwin-arm64.node133890089878748697 0
@@ -2716,6 +2715,7 @@
 101C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\electron-to-chromium\CHANGELOG.md133890089869505647 0
 105C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\electron-to-chromium\full-versions.js133890089861430074 0
 97C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\electron-to-chromium\index.js133890089863099662 0
+96C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\electron-to-chromium\LICENSE133890089854716151 0
 98C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\electron-to-chromium\README.md133890089870057425 0
 117C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\fs-search\fs-search.linux-arm64-musl.node133890089878111148 0
 106C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\dist\unpacker\features.js133890089898394196 0
@@ -2754,7 +2754,6 @@
 99C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\source-map\dist\wasm.js133890089873762706 0
 102C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\domutils\lib\manipulation.d.ts.map133890089869989885 0
 84C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\chalk\index.d.ts133890089864820922 0
-81C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.0ae06c76.js.map133895180368384236 0
 117C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\link-rel-preconnect.js133890089901039841 0
 94C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\domutils\lib\querying.d.ts133890089875972641 0
 98C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\domutils\lib\querying.d.ts.map133890089870603902 0
@@ -3057,6 +3056,8 @@
 98C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\cosmiconfig\dist\readFile.d.ts133890089880880598 0
 102C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\cosmiconfig\dist\readFile.d.ts.map133890089876825261 0
 108C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\object-fit.js133890089902286125 0
+95C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\cosmiconfig\dist\types.d.ts133890089880982921 0
+99C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\regions\CY.js133890089897413950 0
 93C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\cosmiconfig\dist\types.js133890089867974329 0
 103C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\regions\alt-oc.js133890089874302960 0
 97C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\cosmiconfig\dist\types.js.map133890089877600892 0
@@ -3411,7 +3412,6 @@
 107C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\css-fixed.js133890089894035041 0
 115C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\css-focus-visible.js133890089894050755 0
 114C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\css-font-palette.js133890089894136486 0
-93C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\fs\lib\browser.js133890089856686958 0
 125C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\css-font-rendering-controls.js133890089894153810 0
 106C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\css-grid.js133890089894246597 0
 121C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\caniuse-lite\data\features\css-hanging-punctuation.js133890089894276494 0
@@ -4150,7 +4150,6 @@
 120C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\runtime-js\src\helpers\browser\css-loader.js133890089869434722 0
 125C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\runtime-js\src\helpers\browser\import-polyfill.js133890089875263362 0
 119C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\runtime-js\src\helpers\browser\js-loader.js133890089876687859 0
-82C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.92f06f44.css.map133895180368394205 0
 125C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\runtime-js\src\helpers\browser\prefetch-loader.js133890089879048973 0
 98C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\runtime-js\lib\helpers133890089876300978 1
 103C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\runtime-js\lib\JSRuntime.js133890089877767561 0
@@ -4331,6 +4330,7 @@
 94C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\fs\src\MemoryFS.js133890089865967965 0
 92C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\fs\src\NodeFS.js133890089867811664 0
 95C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\fs\src\OverlayFS.js133890089868225857 0
+93C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\fs\lib\browser.js133890089856686958 0
 93C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\fs\lib\types.d.ts133890089873888638 0
 86C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\events\lib133890089868090555 1
 90C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\@parcel\events\LICENSE133890089854794299 0
@@ -4723,9 +4723,10 @@
 81C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\.bin\svgo.ps1133890089908111879 0
 79C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\.bin\terser133890089908111879 0
 83C:\Users\likki\Desktop\GoITeens\event_booster-project4\node_modules\.bin\terser.cmd133890089908111879 0
-77C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.0ae06c76.js133895180368286233 0
-78C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.92f06f44.css133895180368286233 0
-81C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.ffe974aa.js.map133895180368384236 0
+81C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.18afc084.js.map133895220555494415 0
+78C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.63e9c4ce.css133895220555435340 0
+82C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.63e9c4ce.css.map133895220555494415 0
+77C:\Users\likki\Desktop\GoITeens\event_booster-project4\dist\index.8eba4bb6.js133895220555435340 0
 78C:\Users\likki\Desktop\GoITeens\event_booster-project4\assets\how-it-works.png133889192729948635 0
 79C:\Users\likki\Desktop\GoITeens\event_booster-project4\assets\repo-settings.png133889192729960257 0
 72C:\Users\likki\Desktop\GoITeens\event_booster-project4\.github\workflows133889192729631392 1
