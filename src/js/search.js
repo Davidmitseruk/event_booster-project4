@@ -1,43 +1,62 @@
-"use strict"
-const BASE_URL = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=	L7VlP0GtWQZMHhIkOqz3A3FcxX8k8AWD&size=20';
+'use strict';
+const BASE_URL =
+  'https://app.ticketmaster.com/discovery/v2/events.json?apikey=L7VlP0GtWQZMHhIkOqz3A3FcxX8k8AWD';
 const input = document.querySelector('.header__search');
-const container = document.querySelector('.hero__items');
+const container = document.querySelector('#hero__items');
+
+let timeOut;
+
 input.addEventListener('input', (e) => {
-    e.preventDefault();
-    search(input.value);
-    render();
+  e.preventDefault();
+clearTimeout(timeOut);
+timeOut = setTimeout(async () => {
+  await search(input.value.trim());
+}, 500);
 });
-async function getEvents(){
-try {
-    const r = await fetch(BASE_URL);
-    const data = await r.json();
-    return data._embedded?.events || [];
+
+async function getAllEvents(keyword) {
+    const allEvents = [];
+    let page = 0;
+    let totalPages = 1;
+
+    try {
+        while (page < totalPages) {
+            const r = await fetch(`${BASE_URL}&keyword=${keyword}&size=20&page=${page}`);
+            const data = await r.json();
+            const events = data._embedded?.events || [];
+            allEvents.push(...events);
+
+            totalPages = data.page.totalPages;
+            page++;
+        }
+    } catch (error) {
+        console.log(error);
+    }
+
+    return allEvents;
 }
-catch (error){
-console.error(error);
-}
-};
+
 async function search(value) {
-    const events = await getEvents();
+    const events = await getAllEvents(value);
     const filtered = events.filter(event =>
         event.name.toLowerCase().includes(value.toLowerCase())
     );
-    if (filtered.length === 0){
-      container.innerHTML = '<h2>There are not such events</h2>'
+  if (filtered.length === 0) {
+    container.innerHTML = '<h2>There are no such events</h2>';
+    return;
   }
-    render(filtered);
+
+    render(filtered.slice(0, 20)); // (filtered.slice(0, 20))
 }
+
 function render(events) {
-    const templateSource = `
-      <div class='hero__template'>
+  const templateSource = `
+      <div class='hero__template' >
         <ul class='hero__list'>
           {{#each this}}
-            <li class='hero__item'>
+            <li class='hero__item' data-id="{{id}}">
               <div class='hero__img-wrap'>
-                <picture class='hero__img'>
-                  <source srcset="{{images.0.url}} 1x, {{images.0.url}} 2x" type="image/jpeg" />
                   <img src="{{images.0.url}}" alt="{{name}}" class="hero__img-teg"/>
-                </picture>
               </div>
               <h2 class='hero__name'>{{name}}</h2>
               <p class='hero__date'>{{dates.start.localDate}}</p>
@@ -54,10 +73,11 @@ function render(events) {
     `;
     const template = Handlebars.compile(templateSource);
     const markUp = template(events);
-    container.insertAdjacentHTML('beforeend', markUp);
-};
-async function startApp(){
-    const allEvents = await getEvents();
-    render(allEvents);
-};
-startApp();
+    container.innerHTML = markUp;
+}
+// async function startApp(){
+//     const allEvents = await getEvents();
+//     render(allEvents);
+// };
+// startApp();
+
