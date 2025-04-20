@@ -12,15 +12,12 @@ const refs = {
   paginationContainer: document.getElementById('hero__pagination'),
 };
 const templateSource = `
-  <div class='hero__template' data-id="{{id}}">
+  <div class='hero__template'>
     <ul class='hero__list'>
       {{#each items}}
-        <li class='hero__item'>
+        <li class='hero__item'  data-id="{{id}}">
           <div class='hero__img-wrap'>
-            <picture class='hero__img'>
-              <source srcset="{{image.url}} 1x, {{image.url}} 2x" type="image/jpeg" />
-              <img src="{{image.url}}" alt="{{name}}" class="hero__img-teg" />
-            </picture>
+            <img src="{{image.url}}" alt="{{name}}" class="hero__img-teg" />
           </div>
           <h2 class='hero__name'>{{name}}</h2>
           <p class='hero__date'>{{date}}</p>
@@ -118,14 +115,11 @@ function setupPagination() {
           pageGroupStart + 1,
           totalPages - pagesPerGroup + 1
         );
-      }
-      else if (i === startPage + middlePageIndex - 1 && startPage > 1) {
+      } else if (i === startPage + middlePageIndex - 1 && startPage > 1) {
         pageGroupStart = Math.max(1, startPage - 1);
-      }
-      else if (i === endPage && i < totalPages) {
+      } else if (i === endPage && i < totalPages) {
         pageGroupStart = i;
-      }
-      else if (i === startPage && startPage > 1) {
+      } else if (i === startPage && startPage > 1) {
         pageGroupStart = Math.max(1, i - pagesPerGroup + 1);
       }
 
