@@ -1,21 +1,15 @@
 .header {
   background-color: black;
-
   &__logo {
     position: absolute;
   }
-
   &__sign {
     display: flex;
     justify-content: end;
     gap: 15px;
   }
-
   &__logo {
     position: absolute;
-  }
-  &__nav {
-    margin-left: 1300px;
   }
   &__central {
     display: flex;
@@ -55,7 +49,6 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
-    margin-bottom: 133px;
   }
   &__search {
     text-align: center;
@@ -83,12 +76,9 @@
   }
   &__btn {
     cursor: pointer;
-    margin-top: -100px;
     margin-bottom: 89px;
     text-align: center;
     border-radius: 25px;
-    width: 134px;
-    height: 24px;
     font-family: 'Montserrat' sans-serif;
     font-weight: 500;
     font-size: 13px;
@@ -96,97 +86,131 @@
     color: #fff;
     background: rgba(0, 0, 0, 0.4);
     border: 2px solid #dc56c5;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    padding-left: 10px;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, padding 0.3s ease;
+  }
+  &__btn-text {
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  &__circle {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50px;
+     transition: background-color 0.3s ease, margin 0.5s ease;
+  }
+}
+.header__btn-dark {
+  .header__circle {
+    background-color: #fff;
+    margin-left: 6px;
+    margin-right: 0;
+  }
+}
+.header__btn-light {
+  order: 1;
+  padding-left: 4px;
+  padding-right: 10px;
+  .header__circle {
+    order: -1;
+    margin-left: 0;
+    margin-right: 6px;
+    background-color: #0E0E0E;
   }
 }
 
 @media screen and (max-width: 779px) {
-  &__logo {
-    position: absolute;
-  }
+  .header {
+    &__logo {
+      position: absolute;
+    }
 
-  &__sign {
-    display: none;
+    &__sign {
+      display: none;
+    }
   }
 
   .header {
     background-color: black;
-  }
 
-  &__central {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  &_title {
-    text-align: center;
-    width: 285px;
-    font-family: 'Montserrat' sans-serif;
-    margin-top: 40px;
-    margin-bottom: -15px;
-    font-weight: 900;
-    font-size: 18px;
-    color: #dc56c5;
-  }
-  &__sign-in {
-    background-color: transparent;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: #fff;
-  }
-  &_sign-up {
-    background-color: transparent;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: #fff;
-  }
+    &__central {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    &_title {
+      text-align: center;
+      width: 285px;
+      font-family: 'Montserrat' sans-serif;
+      margin-top: 40px;
+      margin-bottom: -15px;
+      font-weight: 900;
+      font-size: 18px;
+      color: #dc56c5;
+    }
+    &__sign-in {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #fff;
+    }
+    &_sign-up {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #fff;
+    }
 
-  &__inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 133px;
-  }
-  &__search {
-    text-align: center;
-    border-radius: 25px;
-    min-width: 270px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 16px;
-    color: #939393;
-    border: 1px solid gray;
-  }
-  &__country {
-    text-align: center;
-    border-radius: 25px;
-    min-width: 270px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 16px;
-    color: #939393;
-    border: 1px solid gray;
-  }
-  &__btn {
-    cursor: pointer;
-    margin-top: -140px;
-    margin-bottom: 59px;
-    text-align: center;
-    border-radius: 25px;
-    width: 134px;
-    height: 24px;
-    font-family: 'Montserrat' sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.4);
-    border: 2px solid #dc56c5;
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 133px;
+    }
+    &__search {
+      text-align: center;
+      border-radius: 25px;
+      min-width: 270px;
+      height: 40px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #939393;
+      border: 1px solid gray;
+    }
+    &__country {
+      text-align: center;
+      border-radius: 25px;
+      min-width: 270px;
+      height: 40px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #939393;
+      border: 1px solid gray;
+    }
+    &__btn {
+      cursor: pointer;
+      margin-top: -140px;
+      margin-bottom: 59px;
+      text-align: center;
+      border-radius: 25px;
+      width: 134px;
+      height: 24px;
+      font-family: 'Montserrat' sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.4);
+      border: 2px solid #dc56c5;
+    }
   }
 }
 
@@ -198,7 +222,7 @@ body.light-theme {
 
 body.light-theme .header {
   background-image: none;
-  background: url(./src/mercedes-benz_s-class__588754625hd.webp);
+  // background: url(./src/mercedes-benz_s-class__588754625hd.webp);
 }
 
 body.light-theme .header__title {
@@ -218,7 +242,8 @@ body.light-theme .header__country {
   border: 1px solid #aaa;
 }
 
-body.light-theme .hero__place,
-body.light-theme .hero__date {
+
+body.light-theme .header__sign-in,
+body.light-theme .header__sign-up {
   color: #000;
 }
