@@ -29,6 +29,7 @@
     color: #dc56c5;
   }
   &__sign-in {
+    background-color: transparent;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -36,6 +37,7 @@
     color: #fff;
   }
   &__sign-up {
+    background-color: transparent;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -214,6 +216,7 @@
 
 body.light-theme {
   background-color: #ffffff;
+  transition: background-color 0.3s ease-in;
   color: #000000;
 }
 
@@ -238,6 +241,7 @@ body.light-theme .header__country {
   color: #333;
   border: 1px solid #aaa;
 }
+
 
 body.light-theme .header__sign-in,
 body.light-theme .header__sign-up {
