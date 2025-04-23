@@ -1,37 +1,39 @@
-<div class="modal">
-    <div class="modal-header">
-      <div class="author-info">
-        <img src="avatar.jpg" alt="Author Avatar">
-        <div class="author-name">BLACK EYED PEAS</div>
-      </div>
-      <button class="modal-close">✕</button>
-    </div>
-  
-    <div class="modal-body">
-      <img src="blackeyedpeas.jpg" alt="Poster Image">
-  
-      <div class="modal-content">
-        <p class="section-title">INFO</p>
+<div class="backdrop is-hidden">
+  <div class="modal">
+    <header class="modal-header">
+      <img src="avatar.jpg" alt="Author Avatar" class="author-avatar">
+      <span class="author-name">BLACK EYED PEAS</span>
+      <button class="modal-close">
+        <svg class="icon-close">
+          <use href="sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </header>
+
+    <main class="modal-body">
+      <img src="blackeyedpeas.jpg" alt="Poster Image" class="poster">
+
+      <section class="modal-content">
+        <h2>INFO</h2>
         <p>Atlas Weekend is the largest music festival in Ukraine. More than 200 artists will create a proper music festival atmosphere on 10 stages</p>
-  
-        <p class="section-title">WHEN</p>
+
+        <h2>WHEN</h2>
         <p>2021-06-09<br>20:00 (Kyiv/Ukraine)</p>
-  
-        <p class="section-title">WHERE</p>
+
+        <h2>WHERE</h2>
         <p>Kyiv, Ukraine<br>VDNH</p>
-  
-        <p class="section-title">WHO</p>
+
+        <h2>WHO</h2>
         <p>The Black Eyed Peas</p>
-  
-        <p class="section-title">PRICES</p>
-        <p>Standart 300-500 UAH</p>
-        <button class="buy-ticket">BUY TICKETS</button>
-        <p>VIP 1000-1500 UAH</p>
-        <button class="buy-ticket">BUY TICKETS</button>
-  
-        <div class="more-from-author">
-          <button class="more-button">MORE FROM THIS AUTHOR</button>
-        </div>
-      </div>
-    </div>
+
+        <h2>PRICES</h2>
+        <p>Standart 300–500 UAH</p>
+        <button>BUY TICKETS</button>
+        <p>VIP 1000–1500 UAH</p>
+        <button>BUY TICKETS</button>
+
+        <button class="more-button">MORE FROM THIS AUTHOR</button>
+      </section>
+    </main>
   </div>
+</div>
