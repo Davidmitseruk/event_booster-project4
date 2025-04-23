@@ -9,6 +9,7 @@
     display: flex;
     justify-content: end;
     gap: 15px;
+    padding-top: 15px;
   }
   &__logo {
     position: absolute;
@@ -28,7 +29,7 @@
     margin-bottom: 52px;
     font-weight: 900;
     font-size: 50px;
-    color: $modalBackground;
+    color: $title;
   }
   &__sign-in {
     cursor: pointer;
@@ -38,6 +39,7 @@
     font-size: 16px;
     text-align: center;
     color: $text;
+    border: transparent;
   }
   &__sign-up {
     cursor: pointer;
@@ -47,6 +49,7 @@
     font-size: 16px;
     text-align: center;
     color: $text;
+    border: transparent;
   }
 
   &__inputs {
@@ -98,6 +101,7 @@
       border-color 0.3s ease, padding 0.3s ease;
   }
   &__btn-text {
+    font-size: 9px;
     margin: 0;
     transition: color 0.3s ease;
   }
@@ -152,10 +156,8 @@
       width: 285px;
       font-family: 'Montserrat' sans-serif;
       margin-top: 40px;
-      margin-bottom: -15px;
       font-weight: 900;
       font-size: 18px;
-      color: $title;
     }
     &__sign-in {
       text-decoration: none;
@@ -200,7 +202,6 @@
     }
     &__btn {
       cursor: pointer;
-      margin-top: -140px;
       margin-bottom: 59px;
       text-align: center;
       border-radius: 25px;
@@ -253,4 +254,3 @@ body.light-theme .hero__place,
 body.light-theme .hero__date {
   color: $modalSecondaryText;
 }
-
