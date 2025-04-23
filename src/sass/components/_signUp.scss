@@ -1,10 +1,10 @@
 .signUp {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 272px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 272px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(1);
   transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms;
@@ -23,123 +23,123 @@
     display: flex;
     align-items: center;
     position: absolute;
-     right: 15px;
-     fill: $modalText;
-     background-color: transparent;
+    right: 15px;
+    fill: $modalText;
+    background-color: transparent;
   }
-  &__title{
+  &__title {
     font-weight: 600;
-font-size: 20px;
-color: $title;
-text-align: center;
-padding-top: 70px;
-padding-bottom: 20px;
+    font-size: 20px;
+    color: $title;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
   }
-  &__description{
+  &__description {
     text-align: start;
     font-weight: 400;
-font-size: 18px;
-color: #0e0e0e;
-margin: 0 auto;
-max-width: 222px;
-display: flex;
-justify-content: center;
+    font-size: 18px;
+    color: #0e0e0e;
+    margin: 0 auto;
+    max-width: 222px;
+    display: flex;
+    justify-content: center;
   }
-  &__form{
+  &__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
   }
-  &__label{
+  &__label {
     display: flex;
     flex-direction: column;
     font-weight: 500;
-font-size: 16px;
-color: $modalText;
-margin-bottom: 25px;
-position: relative;
+    font-size: 16px;
+    color: $modalText;
+    margin-bottom: 25px;
+    position: relative;
   }
-  &__field{
+  &__field {
     border: 1px solid $modalText;
-border-radius: 5px;
-padding: 10px;
-max-width: 222px;
-font-weight: 500;
-font-size: 16px;
-color: $modalInputText;
-margin-top: 10px;
-&:focus{
-  border: 3px solid $modalText;
-}
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 222px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $modalInputText;
+    margin-top: 10px;
+    &:focus {
+      border: 3px solid $modalText;
+    }
   }
-&__btn-eye{
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  top: 38px;
+  &__btn-eye {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 38px;
     left: 195px;
     cursor: pointer;
   }
-  &__eye{
+  &__eye {
     fill: none;
-      }
-&__btn-wrap{
+  }
+  &__btn-wrap {
     display: flex;
     justify-content: center;
-}
-&__btn{
+  }
+  &__btn {
     border: 1px solid $modalText;
-border-radius: 5px;
-padding: 10px 16px;
-font-weight: 500;
-font-size: 16px;
-color: $modalText;
-background-color: transparent;
-margin-top: 40px;
-margin-bottom: 70px;
-cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $modalText;
+    background-color: transparent;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    cursor: pointer;
+  }
 }
-}
-@media screen and (min-width: 640px){
-    .signUp{
-        max-width: 595px;
-        &__title{
-            padding-top: 80px;
-        }
-        &__description{
-            text-align: center;
-        }
-        &__form{
-            flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 33px;
-    margin-bottom: 20px;
-        }
-        &__field{
-            max-width: 255px;
-        }
-        &__btn{
-            margin-top: 20px;
-            margin-bottom: 80px;
-        }
+@media screen and (min-width: 640px) {
+  .signUp {
+    max-width: 595px;
+    &__title {
+      padding-top: 80px;
     }
-}
-@media screen and (min-width: 1246px){
-    .signUp{
-        max-width: 930px;
-        &__title{
-            font-weight: 600;
-font-size: 24px;
-        }
-        &__form{
-padding-top: 20px;
-padding-bottom: 30px;
-justify-content: space-evenly;
-max-width: 560px;
-margin: 0 auto;
-        }
+    &__description {
+      text-align: center;
+    }
+    &__form {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 33px;
+      margin-bottom: 20px;
+    }
+    &__field {
+      max-width: 255px;
+    }
+    &__btn {
+      margin-top: 20px;
+      margin-bottom: 80px;
     }
   }
+}
+@media screen and (min-width: 1246px) {
+  .signUp {
+    max-width: 930px;
+    &__title {
+      font-weight: 600;
+      font-size: 24px;
+    }
+    &__form {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      justify-content: space-evenly;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+  }
+}
