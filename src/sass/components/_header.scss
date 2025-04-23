@@ -1,5 +1,7 @@
 .header {
-  background-color: black;
+  background-image: url(/src/images/pic-desktop@1x.png), url(/src/images/pic-desktop@1x.webp);
+  background-size: cover, contain;
+  background-repeat: no-repeat, no-repeat;
   &__logo {
     position: absolute;
   }
@@ -7,6 +9,7 @@
     display: flex;
     justify-content: end;
     gap: 15px;
+    padding-top: 15px;
   }
   &__logo {
     position: absolute;
@@ -26,21 +29,27 @@
     margin-bottom: 52px;
     font-weight: 900;
     font-size: 50px;
-    color: #dc56c5;
+    color: $title;
   }
   &__sign-in {
+    cursor: pointer;
+    background-color: transparent;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    color: #fff;
+    color: $text;
+    border: transparent;
   }
   &__sign-up {
+    cursor: pointer;
+    background-color: transparent;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    color: #fff;
+    color: $text;
+    border: transparent;
   }
 
   &__inputs {
@@ -55,8 +64,8 @@
     height: 40px;
     font-weight: 400;
     font-size: 16px;
-    color: #939393;
-    border: 1px solid gray;
+    color: $inputText;
+    border: 1px solid $inputText;
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.2);
   }
@@ -67,8 +76,8 @@
     height: 40px;
     font-weight: 400;
     font-size: 16px;
-    color: #939393;
-    border: 1px solid gray;
+    color: $inputText;
+    border: 1px solid $inputText;
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.2);
   }
@@ -81,30 +90,32 @@
     font-weight: 500;
     font-size: 13px;
     text-transform: uppercase;
-    color: #fff;
+    color: $text;
     background: rgba(0, 0, 0, 0.4);
-    border: 2px solid #dc56c5;
+    border: 2px solid $title;
     display: flex;
     align-items: center;
     padding: 4px;
     padding-left: 10px;
-    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, padding 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease,
+      border-color 0.3s ease, padding 0.3s ease;
   }
   &__btn-text {
+    font-size: 9px;
     margin: 0;
     transition: color 0.3s ease;
   }
   &__circle {
     width: 16px;
     height: 16px;
-    background-color: #fff;
+    background-color: $text;
     border-radius: 50px;
-     transition: background-color 0.3s ease, margin 0.5s ease;
+    transition: background-color 0.3s ease, margin 0.5s ease;
   }
 }
 .header__btn-dark {
   .header__circle {
-    background-color: #fff;
+    background-color: $text;
     margin-left: 6px;
     margin-right: 0;
   }
@@ -117,7 +128,7 @@
     order: -1;
     margin-left: 0;
     margin-right: 6px;
-    background-color: #0E0E0E;
+    background-color: $inputBackground;
   }
 }
 
@@ -133,8 +144,6 @@
   }
 
   .header {
-    background-color: black;
-
     &__central {
       display: flex;
       flex-direction: column;
@@ -147,24 +156,22 @@
       width: 285px;
       font-family: 'Montserrat' sans-serif;
       margin-top: 40px;
-      margin-bottom: -15px;
       font-weight: 900;
       font-size: 18px;
-      color: #dc56c5;
     }
     &__sign-in {
       text-decoration: none;
       font-weight: 400;
       font-size: 16px;
       text-align: center;
-      color: #fff;
+      color: $text;
     }
     &_sign-up {
       text-decoration: none;
       font-weight: 400;
       font-size: 16px;
       text-align: center;
-      color: #fff;
+      color: $text;
     }
 
     &__inputs {
@@ -180,8 +187,8 @@
       height: 40px;
       font-weight: 400;
       font-size: 16px;
-      color: #939393;
-      border: 1px solid gray;
+      color: $inputText;
+      border: 1px solid $inputText;
     }
     &__country {
       text-align: center;
@@ -190,12 +197,11 @@
       height: 40px;
       font-weight: 400;
       font-size: 16px;
-      color: #939393;
-      border: 1px solid gray;
+      color: $inputText;
+      border: 1px solid $inputText;
     }
     &__btn {
       cursor: pointer;
-      margin-top: -140px;
       margin-bottom: 59px;
       text-align: center;
       border-radius: 25px;
@@ -205,41 +211,46 @@
       font-weight: 500;
       font-size: 13px;
       text-transform: uppercase;
-      color: #fff;
-      background: rgba(0, 0, 0, 0.4);
+      color: $text;
+      background: $inputBackground;
       border: 2px solid #dc56c5;
     }
   }
 }
 
 body.light-theme {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $text;
+  transition: background-color 0.3s ease-in;
+  color: $modalSecondaryText;
 }
 
-body.light-theme .header {
-  background-image: none;
-  // background: url(./src/mercedes-benz_s-class__588754625hd.webp);
-}
+// body.light-theme .header {
+//   background-image: none;
+//   // background: url(./src/mercedes-benz_s-class__588754625hd.webp);
+// }
 
 body.light-theme .header__title {
-  color: #000000;
+  color: $modalSecondaryText;
 }
-
+body.light-theme .star {
+  background-color: $title;
+}
 body.light-theme .header__btn {
   background: rgba(255, 255, 255, 0.4);
-  color: #000;
-  border-color: #333;
+  color: $modalSecondaryText;
+  border-color: $inputBackground;
 }
 
 body.light-theme .header__search,
 body.light-theme .header__country {
   background: rgba(0, 0, 0, 0.1);
-  color: #333;
-  border: 1px solid #aaa;
+  color: $inputBackground;
+  border: 1px solid $inputText;
 }
 
 body.light-theme .header__sign-in,
-body.light-theme .header__sign-up {
-  color: #000;
+body.light-theme .header__sign-up,
+body.light-theme .hero__place,
+body.light-theme .hero__date {
+  color: $modalSecondaryText;
 }
