@@ -96,6 +96,7 @@ function setupPagination() {
 
   for (let i = startPage; i <= endPage; i++) {
     const button = document.createElement('button');
+    button.classList.add('hero__btn');
     button.textContent = i;
     if (i === currentPage) {
       button.classList.add('hero__btn-active');
@@ -135,6 +136,7 @@ function setupPagination() {
     refs.paginationContainer.appendChild(dots);
 
     const lastButton = document.createElement('button');
+    lastButton.classList.add('hero__btn');
     lastButton.textContent = totalPages;
     if (currentPage === totalPages) {
       lastButton.classList.add('hero__btn-active');
