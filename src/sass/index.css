@@ -90,6 +90,10 @@ body {
   body {
     background-image: url("../images/bg/bg-desktop.png"), url("../images/bg/noise.png");
   }
+.header {
+  background-image: url(/src/images/pic-desktop@1x.png), url(/src/images/pic-desktop@1x.webp);
+  background-size: cover, contain;
+  background-repeat: no-repeat, no-repeat;
 }
 .header__logo {
   position: absolute;
@@ -117,9 +121,10 @@ body {
   margin-bottom: 52px;
   font-weight: 900;
   font-size: 50px;
-  color: #dc56c5;
+  color: #fff2fd;
 }
 .header__sign-in {
+  cursor: pointer;
   background-color: transparent;
   text-decoration: none;
   font-weight: 400;
@@ -128,6 +133,7 @@ body {
   color: #fff;
 }
 .header__sign-up {
+  cursor: pointer;
   background-color: transparent;
   text-decoration: none;
   font-weight: 400;
@@ -148,7 +154,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #939393;
-  border: 1px solid gray;
+  border: 1px solid #939393;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.2);
@@ -161,7 +167,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #939393;
-  border: 1px solid gray;
+  border: 1px solid #939393;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.2);
@@ -211,7 +217,7 @@ body {
   order: -1;
   margin-left: 0;
   margin-right: 6px;
-  background-color: #0e0e0e;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 @media screen and (max-width: 779px) {
@@ -266,7 +272,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #939393;
-    border: 1px solid gray;
+    border: 1px solid #939393;
   }
   .header__country {
     text-align: center;
@@ -276,7 +282,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #939393;
-    border: 1px solid gray;
+    border: 1px solid #939393;
   }
   .header__btn {
     cursor: pointer;
@@ -291,18 +297,18 @@ body {
     font-size: 13px;
     text-transform: uppercase;
     color: #fff;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.2);
     border: 2px solid #dc56c5;
   }
 }
 body.light-theme {
-  background-color: #ffffff;
+  background-color: #fff;
   transition: background-color 0.3s ease-in;
-  color: #000000;
+  color: #0e0e0e;
 }
 
 body.light-theme .header__title {
-  color: #000000;
+  color: #0e0e0e;
 }
 
 body.light-theme .star {
@@ -310,21 +316,23 @@ body.light-theme .star {
 }
 
 body.light-theme .header__btn {
-  background-color: rgba(255, 255, 255, 0.4);
-  color: #000;
-  border-color: #333;
+  background: rgba(255, 255, 255, 0.4);
+  color: #0e0e0e;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 body.light-theme .header__search,
 body.light-theme .header__country {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #333;
-  border: 1px solid #aaa;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #939393;
 }
 
 body.light-theme .header__sign-in,
-body.light-theme .header__sign-up {
-  color: #000;
+body.light-theme .header__sign-up,
+body.light-theme .hero__place,
+body.light-theme .hero__date {
+  color: #0e0e0e;
 }
 
 .backdrop {
