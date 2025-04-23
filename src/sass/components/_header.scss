@@ -94,7 +94,8 @@
     align-items: center;
     padding: 4px;
     padding-left: 10px;
-    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, padding 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease,
+      border-color 0.3s ease, padding 0.3s ease;
   }
   &__btn-text {
     margin: 0;
@@ -105,7 +106,7 @@
     height: 16px;
     background-color: $text;
     border-radius: 50px;
-     transition: background-color 0.3s ease, margin 0.5s ease;
+    transition: background-color 0.3s ease, margin 0.5s ease;
   }
 }
 .header__btn-dark {
@@ -139,8 +140,6 @@
   }
 
   .header {
-    background-color: black;
-
     &__central {
       display: flex;
       flex-direction: column;
@@ -224,15 +223,17 @@ body.light-theme {
   color: $modalSecondaryText;
 }
 
-body.light-theme .header {
-  background-image: none;
-  // background: url(./src/mercedes-benz_s-class__588754625hd.webp);
-}
+// body.light-theme .header {
+//   background-image: none;
+//   // background: url(./src/mercedes-benz_s-class__588754625hd.webp);
+// }
 
 body.light-theme .header__title {
   color: $modalSecondaryText;
 }
-
+body.light-theme .star {
+  background-color: $title;
+}
 body.light-theme .header__btn {
   background: rgba(255, 255, 255, 0.4);
   color: $modalSecondaryText;
@@ -245,7 +246,6 @@ body.light-theme .header__country {
   color: $inputBackground;
   border: 1px solid $inputText;
 }
-
 
 body.light-theme .header__sign-in,
 body.light-theme .header__sign-up,
