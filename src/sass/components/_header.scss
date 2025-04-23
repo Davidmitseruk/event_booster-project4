@@ -9,6 +9,7 @@
     display: flex;
     justify-content: end;
     gap: 15px;
+    padding-top: 15px;
   }
   &__logo {
     position: absolute;
@@ -28,7 +29,7 @@
     margin-bottom: 52px;
     font-weight: 900;
     font-size: 50px;
-    color: $modalBackground;
+    color: $title;
   }
   &__sign-in {
     cursor: pointer;
@@ -38,6 +39,7 @@
     font-size: 16px;
     text-align: center;
     color: $text;
+    border: transparent;
   }
   &__sign-up {
     cursor: pointer;
@@ -47,6 +49,7 @@
     font-size: 16px;
     text-align: center;
     color: $text;
+    border: transparent;
   }
 
   &__inputs {
@@ -97,6 +100,7 @@
     transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, padding 0.3s ease;
   }
   &__btn-text {
+    font-size: 9px;
     margin: 0;
     transition: color 0.3s ease;
   }
@@ -153,10 +157,8 @@
       width: 285px;
       font-family: 'Montserrat' sans-serif;
       margin-top: 40px;
-      margin-bottom: -15px;
       font-weight: 900;
       font-size: 18px;
-      color: $title;
     }
     &__sign-in {
       text-decoration: none;
@@ -201,7 +203,6 @@
     }
     &__btn {
       cursor: pointer;
-      margin-top: -140px;
       margin-bottom: 59px;
       text-align: center;
       border-radius: 25px;
@@ -229,10 +230,17 @@ body.light-theme .header {
   // background: url(./src/mercedes-benz_s-class__588754625hd.webp);
 }
 
+<<<<<<< Updated upstream
 body.light-theme .header__title {
   color: $modalSecondaryText;
 }
 
+=======
+
+body.light-theme .star {
+  background-color: $title;
+}
+>>>>>>> Stashed changes
 body.light-theme .header__btn {
   background: rgba(255, 255, 255, 0.4);
   color: $modalSecondaryText;
@@ -246,11 +254,13 @@ body.light-theme .header__country {
   border: 1px solid $inputText;
 }
 
+<<<<<<< Updated upstream
 
 body.light-theme .header__sign-in,
 body.light-theme .header__sign-up,
+=======
+>>>>>>> Stashed changes
 body.light-theme .hero__place,
 body.light-theme .hero__date {
   color: $modalSecondaryText;
 }
-
