@@ -1,4 +1,40 @@
 .footer {
+
+    background-color: #000;
+    height: 120px;
+    padding: 0 20px;
+    color: #fff;
+    position: relative;
+    // background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .footer__content {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+  }
+  
+  .footer__text {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 12px;
+  }
+  
+  .footer__heart {
+    color: rgba(255, 0, 0, 0.4);
+  }
+  
+  .footer__link {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+=======
   height: 120px;
   padding: 0 20px;
   color: #fff;
@@ -60,6 +96,7 @@
   &.visible {
     opacity: 1;
     visibility: visible;
+
   }
 
   &:hover {
