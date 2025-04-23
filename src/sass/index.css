@@ -90,6 +90,7 @@ body {
   body {
     background-image: url("../images/bg/bg-desktop.png"), url("../images/bg/noise.png");
   }
+}
 .header {
   background-image: url(/src/images/pic-desktop@1x.png), url(/src/images/pic-desktop@1x.webp);
   background-size: cover, contain;
@@ -368,17 +369,17 @@ body.light-theme .hero__date {
   margin-top: 8px;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   box-sizing: border-box;
   cursor: pointer;
-  border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
   position: absolute;
   right: 15px;
-  background-color: pink;
+  fill: #4c00fe;
+  background-color: transparent;
 }
 .signIn__title {
   font-weight: 600;
@@ -412,6 +413,7 @@ body.light-theme .hero__date {
   font-size: 16px;
   color: #4c00fe;
   margin-bottom: 25px;
+  position: relative;
 }
 .signIn__field {
   border: 1px solid #4c00fe;
@@ -422,6 +424,20 @@ body.light-theme .hero__date {
   font-size: 16px;
   color: #b799ff;
   margin-top: 10px;
+}
+.signIn__field:focus {
+  border: 3px solid #4c00fe;
+}
+.signIn__btn-eye {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 38px;
+  left: 195px;
+  cursor: pointer;
+}
+.signIn__eye {
+  fill: none;
 }
 .signIn__text {
   font-weight: 500;
@@ -525,17 +541,17 @@ body.light-theme .hero__date {
   margin-top: 8px;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   box-sizing: border-box;
   cursor: pointer;
-  border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
   position: absolute;
   right: 15px;
-  background-color: pink;
+  fill: #4c00fe;
+  background-color: transparent;
 }
 .signUp__title {
   font-weight: 600;
@@ -569,6 +585,7 @@ body.light-theme .hero__date {
   font-size: 16px;
   color: #4c00fe;
   margin-bottom: 25px;
+  position: relative;
 }
 .signUp__field {
   border: 1px solid #4c00fe;
@@ -579,6 +596,20 @@ body.light-theme .hero__date {
   font-size: 16px;
   color: #b799ff;
   margin-top: 10px;
+}
+.signUp__field:focus {
+  border: 3px solid #4c00fe;
+}
+.signUp__btn-eye {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 38px;
+  left: 195px;
+  cursor: pointer;
+}
+.signUp__eye {
+  fill: none;
 }
 .signUp__btn-wrap {
   display: flex;
