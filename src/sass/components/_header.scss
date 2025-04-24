@@ -229,9 +229,7 @@ body.light-theme {
 //   // background: url(./src/mercedes-benz_s-class__588754625hd.webp);
 // }
 
-body.light-theme .header__title {
-  color: $modalSecondaryText;
-}
+
 body.light-theme .star {
   background-color: $title;
 }
@@ -248,8 +246,6 @@ body.light-theme .header__country {
   border: 1px solid $inputText;
 }
 
-body.light-theme .header__sign-in,
-body.light-theme .header__sign-up,
 body.light-theme .hero__place,
 body.light-theme .hero__date {
   color: $modalSecondaryText;
