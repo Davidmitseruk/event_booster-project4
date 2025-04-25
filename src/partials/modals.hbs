@@ -1,32 +1,33 @@
-<div class="backdrop is-hidden">
+<div class="backdrop is__hidden">
   <div class="modal">
-    <div class="modal-poster">
-      <img src="{{posterImage}}" alt="Poster Image" class="poster">
-    </div>
-    <div class="modal-block">
+    <div class="modal__wrap">
+          <div class="modal__block">
       <h2>INFO</h2>
       <p>{{eventInfo}}</p>
     </div>
-    <div class="modal-block">
+    <div class="modal__block">
       <h2>WHEN</h2>
       <p>{{eventDate}}<br>{{eventTime}} ({{eventLocation}})</p>
     </div>
-    <div class="modal-block">
+    <div class="modal__block">
       <h2>WHERE</h2>
       <p>{{eventCity}}, {{eventCountry}}<br>{{eventVenue}}</p>
     </div>
-    <div class="modal-block">
+    <div class="modal__block">
       <h2>WHO</h2>
       <p>{{eventArtists}}</p>
     </div>
-    <div class="modal-block">
+    </div>
+    <div class="modal__poster">
+      <img src="{{posterImage}}" alt="Poster Image" class="poster">
+    </div>
+    <div class="modal__block">
       <h2>PRICES</h2>
       <p>{{priceStandard}}</p>
       <button>BUY TICKETS</button>
       <p>{{priceVIP}}</p>
       <button>BUY TICKETS</button>
     </div>
-    <button class="more-button">MORE FROM THIS AUTHOR</button>
-    <script src="modals.js"></script>
+    <button class="more__button">MORE FROM THIS AUTHOR</button>
   </div>
 </div>
