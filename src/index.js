@@ -5,3 +5,7 @@ import './js/theme';
 import './js/scroll';
 import './js/signIn';
 import './js/signUp';
+import './js/eyeIn';
+import './js/eyeUp';
+import './js/modal';
+import './js/country';
