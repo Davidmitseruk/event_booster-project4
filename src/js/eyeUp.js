@@ -1,4 +1,5 @@
 "use strict"
+import symbolDefs from '../images/symbol-defs.svg';
 const btnPass = document.querySelector('#eye-password');
 const iconPass = document.querySelector('#eye-pass use');
 const inputPass = document.querySelector('#signUp-password');
@@ -7,14 +8,15 @@ let isOpenPass = false;
 btnPass.addEventListener('click', (e) => {
     e.preventDefault();
     if (isOpenPass) {
-        iconPass.setAttribute('href', './images/symbol-defs.svg#icon-closed-eye-icon');
+        iconPass.setAttribute('href', `${symbolDefs}#icon-closed-eye-icon`);
         inputPass.type = 'password';
         isOpenPass = false;
     } else {
-        iconPass.setAttribute('href', './images/symbol-defs.svg#icon-open-eye-icon');
+        iconPass.setAttribute('href', `${symbolDefs}#icon-open-eye-icon`);
         inputPass.type = 'text';
         isOpenPass = true;
-    }
+    } 
+    inputPass.focus();
 });
 
 const btnConf = document.querySelector('#eye-confirm');
@@ -32,5 +34,6 @@ btnConf.addEventListener('click', (e) => {
         iconConf.setAttribute('href', './images/symbol-defs.svg#icon-open-eye-icon');
         inputConf.type = 'text';
         isOpenConf = true;
-    }
+    } 
+    inputConf.focus();
 });
