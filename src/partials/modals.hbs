@@ -1,26 +1,26 @@
 <div class='backdrop is-hidden'>
   <div class='modal'>
     <div class='modal__poster'>
-      <img src='{{posterImage}}' alt='Poster Image' class='poster' />
+      <img src='{{image}}' alt='Poster Image' class='poster' />
     </div>
     <div class='modal__wrap'>
       <div class='modal__block'>
         <h2 class='modal__title'>INFO</h2>
-        <p class='modal__text'>{{eventInfo}}</p>
+        <p class='modal__text'>{{info}}</p>
       </div>
       <div class='modal__block'>
         <h2 class='modal__title'>WHEN</h2>
-        <p class='modal__text'>{{eventDate}}<br />{{eventTime}}
-          {{eventLocation}}</p>
+        <p class='modal__text'>{{date}}<br />{{time}}
+          {{location}}</p>
       </div>
       <div class='modal__block'>
         <h2 class='modal__title'>WHERE</h2>
-        <p class='modal__text'>{{eventCity}},
-          {{eventCountry}}<br />{{eventVenue}}</p>
+        <p class='modal__text'>{{city}},
+          {{country}}<br />{{venue}}</p>
       </div>
       <div class='modal__block'>
         <h2 class='modal__title'>WHO</h2>
-        <p class='modal__text'>{{eventArtists}}</p>
+        <p class='modal__text'>{{artists}}</p>
       </div>
       <div class='modal__block'>
         <h2 class='modal__title'>PRICES</h2>
@@ -31,7 +31,7 @@
       </div>
       <div class='modal__btn-wrap'>
         <button class='modal__button'>MORE FROM THIS AUTHOR</button>
-        <button class='modal__button'>ADD TO FAVOURITE</button>
+        <button class='modal__button' data-id="{{id}}">ADD TO FAVOURITE</button>
       </div>
     </div>
   </div>
