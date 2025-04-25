@@ -82,7 +82,7 @@ body {
 @media screen and (min-width: 640px) {
   body {
     background-image: url("../images/bg/bg-tablet.png"), url("../images/bg/noise.png");
-    background-size: cover, auto;
+    background-size: cover, contain;
     background-repeat: no-repeat, repeat-y;
   }
 }
@@ -103,6 +103,7 @@ body {
   display: flex;
   justify-content: end;
   gap: 15px;
+  padding-top: 15px;
 }
 .header__logo {
   position: absolute;
@@ -122,7 +123,7 @@ body {
   margin-bottom: 52px;
   font-weight: 900;
   font-size: 50px;
-  color: #fff2fd;
+  color: #dc56c5;
 }
 .header__sign-in {
   cursor: pointer;
@@ -132,6 +133,7 @@ body {
   font-size: 16px;
   text-align: center;
   color: #fff;
+  border: transparent;
 }
 .header__sign-up {
   cursor: pointer;
@@ -141,6 +143,7 @@ body {
   font-size: 16px;
   text-align: center;
   color: #fff;
+  border: transparent;
 }
 .header__inputs {
   display: flex;
@@ -192,6 +195,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, padding 0.3s ease;
 }
 .header__btn-text {
+  font-size: 9px;
   margin: 0;
   transition: color 0.3s ease;
 }
@@ -240,10 +244,8 @@ body {
     width: 285px;
     font-family: "Montserrat" sans-serif;
     margin-top: 40px;
-    margin-bottom: -15px;
     font-weight: 900;
     font-size: 18px;
-    color: #dc56c5;
   }
   .header__sign-in {
     text-decoration: none;
@@ -287,7 +289,6 @@ body {
   }
   .header__btn {
     cursor: pointer;
-    margin-top: -140px;
     margin-bottom: 59px;
     text-align: center;
     border-radius: 25px;
@@ -308,10 +309,6 @@ body.light-theme {
   color: #0e0e0e;
 }
 
-body.light-theme .header__title {
-  color: #0e0e0e;
-}
-
 body.light-theme .star {
   background-color: #dc56c5;
 }
@@ -329,8 +326,6 @@ body.light-theme .header__country {
   border: 1px solid #939393;
 }
 
-body.light-theme .header__sign-in,
-body.light-theme .header__sign-up,
 body.light-theme .hero__place,
 body.light-theme .hero__date {
   color: #0e0e0e;
@@ -671,12 +666,13 @@ body.light-theme .hero__date {
 }
 .hero {
   padding-bottom: 60px;
+  text-align: center;
 }
 .hero__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 .hero__item {
   display: flex;
@@ -717,6 +713,41 @@ body.light-theme .hero__date {
   font-size: 12px;
   color: #fff;
 }
+.hero__message {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+}
+.hero__pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  align-items: end;
+}
+.hero__btn {
+  padding: 5px 12px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border: 1px solid transparent;
+  transition: border 250ms ease-in-out;
+  cursor: pointer;
+  border-radius: 10px 0px 10px 0px;
+}
+.hero__btn:not(:last-child) {
+  margin-right: 5px;
+}
+.hero__btn:hover {
+  border: 1px solid rgba(220, 86, 197, 0.6);
+}
+.hero__dots {
+  color: #fff;
+  margin-right: 5px;
+}
+.hero__btn-active {
+  border: 1px solid #dc56c5;
+  color: #dc56c5;
+}
 
 @media screen and (min-width: 720px) {
   .hero__item {
@@ -741,6 +772,39 @@ body.light-theme .hero__date {
   }
 }
 .footer {
+  background-color: #000;
+  height: 120px;
+  padding: 0 20px;
+  color: #fff;
+  position: relative;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.footer__content {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+
+.footer__text {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 12px;
+}
+
+.footer__heart {
+  color: rgba(255, 0, 0, 0.4);
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
   height: 120px;
   padding: 0 20px;
   color: #fff;
