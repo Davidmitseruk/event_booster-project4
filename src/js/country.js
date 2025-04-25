@@ -1,13 +1,23 @@
 
 const apiUrl = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=VkBEt0fFcAqySchZPLKAbH98ntFa7ext'
-const countryInput = document.querySelector('.header__country')
-const list = document.querySelector('#hero__items')
+const countryInput = document.querySelector('.header__country');
+const list = document.querySelector('#hero__items');
+
+let timeOut;
 
 countryInput.addEventListener('input', () => {
-  const countryCode = countryInput.value.toUpperCase().trim();
+  e.preventDefault();
+  clearTimeout(timeOut);
+  timeOut = setTimeout(async () => {
+    await countrys(countryInput.value.trim());
+  }, 500);
+  const countryCode = countryInput.value.toLowerCase().trim();
   if (!countryCode) return;
+});
 
-  fetch(`${apiUrl}&countryCode=${countryCode}`)
+async function countrys(value) {
+  let page = 0;
+  fetch(`${apiUrl}&size=20&page=${page}`)
     .then(res => res.json())
     .then(data => {
       const events = data._embedded?.events || [];
@@ -37,4 +47,4 @@ countryInput.addEventListener('input', () => {
       console.error('Помилка при завантаженні подій:', error);
       list.innerHTML = '<li>Не вдалося знайти події.</li>';
     });
-});
+}
