@@ -1,13 +1,12 @@
 "use strict"
-import favs from './fav.json';
+// import favs from '../fav.json';
 const add = document.querySelector('#addBtn');
 const list = document.querySelector('.fav__list');
-let favsArr = favs || [];
+let favsArr = [];
 add.addEventListener('click', (e) => {
     try{
-      const item = e.target.dataSet.id;
-      const data = JSON.parse(item);
-      favsArr.push(data);
+      const item = e.target.dataset.id;
+      favsArr.push(item);
       render(favsArr);
     }
     catch(error){
