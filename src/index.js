@@ -9,3 +9,4 @@ import './js/eyeIn';
 import './js/eyeUp';
 import './js/modal';
 import './js/country';
+import './js/fav';
