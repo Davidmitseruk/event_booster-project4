@@ -1,5 +1,5 @@
 "use strict"
-import favs from './src/fav.json';
+import favs from './fav.json';
 const add = document.querySelector('#addBtn');
 const list = document.querySelector('.fav__list');
 let favsArr = favs || [];
