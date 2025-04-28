@@ -107,3 +107,4 @@ dist
 .env
 .parcel-cache/data.mdb
 *.mdb
+.parcel-cache/data.mdb
