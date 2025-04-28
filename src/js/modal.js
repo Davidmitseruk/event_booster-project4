@@ -9,10 +9,10 @@ const refs = {
 
 const template = `<div class='backdrop__poster is-hidden'>
   <div class='modal__poster'>
-  <img src='{{image}}' alt='Poster Image' class='poster' />
+  <img src='{{image}}' alt='Poster Image' class='modal__poster-small' />
     <div class="modal__main-wrap">
         <div class='modal__poster-img'>
-        <img src='{{image}}' alt='Poster Image' class='poster' />
+        <img src='{{image}}' alt='Poster Image' class='modal__poster-big' />
         </div>
         <div class='modal__wrap'>
         <div class='modal__block'>
