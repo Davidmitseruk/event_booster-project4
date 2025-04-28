@@ -92,11 +92,18 @@ async function fetchItem(id) {
   }
 }
 
+
 function formatEventData(data) {
+  const limitSentences = (text, 2) => {
+    if (!text) {'No info available';}
+    const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
+    return sentences.slice(0, 2).join(' ').trim() || text;
+  };
+
   return {
     id: data.id,
     image: data.images?.[0]?.url || '',
-    info: data.info || 'No info available',
+    info: limitSentences(data.info, 2), 
     date: data.dates?.start?.localDate || 'N/A',
     time: data.dates?.start?.localTime
       ? data.dates.start.localTime.slice(0, 5)
