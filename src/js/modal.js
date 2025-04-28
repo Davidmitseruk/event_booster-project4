@@ -94,10 +94,10 @@ async function fetchItem(id) {
 
 
 function formatEventData(data) {
-  const limitSentences = (text, 2) => {
+  const limitSentences = (text, maxSentences) => {
     if (!text) {'No info available';}
     const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
-    return sentences.slice(0, 2).join(' ').trim() || text;
+    return sentences.slice(0, maxSentences).join(' ').trim() || text;
   };
 
   return {
