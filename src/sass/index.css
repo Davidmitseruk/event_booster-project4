@@ -206,19 +206,25 @@ body {
   border-radius: 50px;
   transition: background-color 0.3s ease, margin 0.5s ease;
 }
-
-.header__btn-dark .header__circle {
+.header__icon {
+  position: relative;
+  right: 50px;
+  width: 13px;
+  height: 13px;
+  top: 2px;
+  fill: rgb(147, 147, 147);
+}
+.header .header__btn-dark .header__circle {
   background-color: #fff;
   margin-left: 6px;
   margin-right: 0;
 }
-
-.header__btn-light {
+.header .header__btn-light {
   order: 1;
   padding-left: 4px;
   padding-right: 10px;
 }
-.header__btn-light .header__circle {
+.header .header__btn-light .header__circle {
   order: -1;
   margin-left: 0;
   margin-right: 6px;
@@ -328,6 +334,15 @@ body.light-theme .header__country {
 
 body.light-theme .hero__place,
 body.light-theme .hero__date {
+  color: #0e0e0e;
+}
+
+body.light-theme footer {
+  background: #fff;
+  color: #0e0e0e;
+}
+
+body.light-theme .hero__btn {
   color: #0e0e0e;
 }
 
