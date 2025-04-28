@@ -9,10 +9,10 @@ const refs = {
 
 const template = `<div class='backdrop__poster is-hidden'>
   <div class='modal__poster'>
-  <img src='{{image}}' alt='Poster Image' class='modal__poster-small' />
+  <img src='{{image}}' alt='Poster Image' class='poster' />
     <div class="modal__main-wrap">
         <div class='modal__poster-img'>
-        <img src='{{image}}' alt='Poster Image' class='modal__poster-big' />
+        <img src='{{image}}' alt='Poster Image' class='poster' />
         </div>
         <div class='modal__wrap'>
         <div class='modal__block'>
@@ -42,7 +42,7 @@ const template = `<div class='backdrop__poster is-hidden'>
         </div>
         <div class='modal__btn-wrap'>
             <button class='modal__button'>MORE FROM THIS AUTHOR</button>
-            <button class='modal__button' data-id="{{id}}" id="addBtn">ADD TO FAVOURITE</button>
+            <button class='modal__button' data-id="{{id}}">ADD TO FAVOURITE</button>
         </div>
     </div>
     </div>
@@ -92,18 +92,11 @@ async function fetchItem(id) {
   }
 }
 
-
 function formatEventData(data) {
-  const limitSentences = (text, maxSentences) => {
-    if (!text) {'No info available';}
-    const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
-    return sentences.slice(0, maxSentences).join(' ').trim() || text;
-  };
-
   return {
     id: data.id,
     image: data.images?.[0]?.url || '',
-    info: limitSentences(data.info, 2), 
+    info: data.info || 'No info available',
     date: data.dates?.start?.localDate || 'N/A',
     time: data.dates?.start?.localTime
       ? data.dates.start.localTime.slice(0, 5)
