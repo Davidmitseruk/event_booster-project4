@@ -42,7 +42,7 @@ const template = `<div class='backdrop__poster is-hidden'>
         </div>
         <div class='modal__btn-wrap'>
             <button class='modal__button'>MORE FROM THIS AUTHOR</button>
-            <button class='modal__button' data-id="{{id}}" id="addBtn">ADD TO FAVOURITE</button>
+            <button class='modal__button' data-id="{{id}}" id="addBtn" type="button">ADD TO FAVOURITE</button>
         </div>
     </div>
     </div>
@@ -56,6 +56,65 @@ if (refs.dataCards) {
     if (cardEl) {
       const cardId = cardEl.dataset.id;
       await fetchItem(cardId);
+
+// const add = document.querySelector('#addBtn');
+const list = document.querySelector('.fav__list');
+let favsArr = [];
+
+document.body.addEventListener('click', async (e) => {
+  if (e.target && e.target.id === 'addBtn'){
+  try {
+    const id = e.target.dataset.id;
+    const item = await fetchItem(id);
+    favsArr.push(item);
+    render(favsArr);
+  }  catch (error) {
+    console.log(error);
+  }
+}
+});
+
+function render(events) {
+  const validEvents = events.filter(event => 
+    event?.dates?.start?.localDate && event?._embedded?.venues?.[0]?.name
+  );
+  const templateSource = `
+    <div class='fav__template'>
+      <ul class='fav__list'>
+        {{#each this}}
+          <li class='fav__item' data-id="{{id}}">
+            <div class='fav__img-wrap'>
+              <img src="{{images.0.url}}" alt="{{name}}" class="hero__img-teg"/>
+            </div>
+            <h2 class='fav__name'>{{name}}</h2>
+            <p class='fav__date'>
+              {{#if dates.start.localDate}}
+                {{dates.start.localDate}}
+              {{else}}
+                Date unknown
+              {{/if}}
+            </p>
+            <span class='fav__place'>
+              <svg class='fav__place-icon' width='7' height='10'>
+                <use href='#'></use>
+              </svg>
+              {{#if _embedded.venues.0.name}}
+                {{_embedded.venues.0.name}}
+              {{else}}
+                Venue unknown
+              {{/if}}
+            </span>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  `;
+  
+  const template = Handlebars.compile(templateSource);
+  const markUp = template(validEvents);
+  list.innerHTML = markUp;
+}
+
     }
   });
 } else {
@@ -67,7 +126,7 @@ async function fetchItem(id) {
     const r = await fetch(`${apiUrl}/${id}${endUrl}`);
       const data = await r.json();
       console.log(data)
-    const formattedData = formatEventData(data);
+      const formattedData = data ? formatEventData(data) : {};
     const modalHtml = modalTemplate(formattedData);
     refs.modalContainer.innerHTML = modalHtml;
 
