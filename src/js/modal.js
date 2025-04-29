@@ -9,43 +9,43 @@ const refs = {
 
 const template = `<div class='backdrop__poster is-hidden'>
   <div class='modal__poster'>
-  <img src='{{image}}' alt='Poster Image' class='modal__poster-small' />
+    <img src='{{image}}' alt='Poster Image' class='modal__poster-small' />
     <div class="modal__main-wrap">
         <div class='modal__poster-img'>
-        <img src='{{image}}' alt='Poster Image' class='modal__poster-big' />
+          <img src='{{image}}' alt='Poster Image' class='modal__poster-big' />
         </div>
-        <div class='modal__wrap'>
-        <div class='modal__block'>
-            <h2 class='modal__title'>INFO</h2>
-            <p class='modal__text'>{{info}}</p>
-        </div>
-        <div class='modal__block'>
-            <h2 class='modal__title'>WHEN</h2>
-            <p class='modal__text'>{{date}}<br />{{time}}
-            {{location}}</p>
-        </div>
-        <div class='modal__block'>
-            <h2 class='modal__title'>WHERE</h2>
-            <p class='modal__text'>{{city}},
-            {{country}}<br />{{venue}}</p>
-        </div>
-        <div class='modal__block'>
-            <h2 class='modal__title'>WHO</h2>
-            <p class='modal__text'>{{artists}}</p>
-        </div>
-        <div class='modal__block'>
-            <h2 class='modal__title'>PRICES</h2>
-            <p class='modal__text'>{{priceStandard}}</p>
-            <button>BUY TICKETS</button>
-            <p class='modal__text'>{{priceVIP}}</p>
-            <button>BUY TICKETS</button>
-        </div>
-        <div class='modal__btn-wrap'>
-            <button class='modal__button'>MORE FROM THIS AUTHOR</button>
-            <button class='modal__button' data-id="{{id}}" id="addBtn" type="button">ADD TO FAVOURITE</button>
-        </div>
+          <div class='modal__wrap'>
+            <div class='modal__block'>
+                <h2 class='modal__title'>INFO</h2>
+                <p class='modal__text'>{{info}}</p>
+            </div>
+            <div class='modal__block'>
+                <h2 class='modal__title'>WHEN</h2>
+                <p class='modal__text'>{{date}}<br />{{time}}
+                {{location}}</p>
+            </div>
+            <div class='modal__block'>
+                <h2 class='modal__title'>WHERE</h2>
+                <p class='modal__text'>{{city}},
+                {{country}}<br />{{venue}}</p>
+            </div>
+            <div class='modal__block'>
+                <h2 class='modal__title'>WHO</h2>
+                <p class='modal__text'>{{artists}}</p>
+            </div>
+            <div class='modal__block'>
+                <h2 class='modal__title'>PRICES</h2>
+                <p class='modal__text'>{{priceStandard}}</p>
+                <button class="modal__poster-btn">BUY TICKETS</button>
+                <p class='modal__text'>{{priceVIP}}</p>
+                <button class="modal__poster-btn">BUY TICKETS</button>
+            </div>
+         </div>
     </div>
-    </div>
+    <div class='modal__btn-wrap'>
+        <button class='modal__button'>MORE FROM THIS AUTHOR</button>
+          <button class='modal__button' data-id="{{id}}" id="addBtn">ADD TO FAVOURITE</button>
+     </div>
   </div>
 </div>`;
 const modalTemplate = Handlebars.compile(template);
@@ -119,7 +119,7 @@ async function fetchItem(id) {
       const data = await r.json();
       console.log(data)
       const formattedData = data ? formatEventData(data) : {};
-      
+   
     const modalHtml = modalTemplate(formattedData);
     refs.modalContainer.innerHTML = modalHtml;
 
@@ -146,10 +146,11 @@ async function fetchItem(id) {
   };
 }
 
-
 function formatEventData(data) {
   const limitSentences = (text, maxSentences) => {
-    if (!text) {'No info available';}
+    if (!text) {
+      ('No info available');
+    }
     const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
     return sentences.slice(0, maxSentences).join(' ').trim() || text;
   };
@@ -157,7 +158,7 @@ function formatEventData(data) {
   return {
     id: data.id,
     image: data.images?.[0]?.url || '',
-    info: limitSentences(data.info, 2), 
+    info: limitSentences(data.info, 2),
     date: data.dates?.start?.localDate || 'N/A',
     time: data.dates?.start?.localTime
       ? data.dates.start.localTime.slice(0, 5)
