@@ -2,6 +2,14 @@
     padding-bottom: 60px;
     text-align: center;
     border-bottom: 1px solid $inputText;
+    padding-top: 60px;
+    &__title{
+      color: $text;
+      text-align: center;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    }
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -83,28 +91,6 @@
       color: $title;
     }
   }
-  
-  // .hero__btn {
-  //   border-radius: 10px 0px 10px 0px;
-  //   border: 2px solid transparent;
-  //   background: linear-gradient(45deg,transparent,transparent) border-box; /*3*/
-  //   mask: /*4*/
-  //     linear-gradient(transparent 0 0) padding-box,
-  //     linear-gradient(#000 0 0);
-  //   mask-composite: exclude; /*5*/
-  //   transition: background 250ms ease-in-out;
-  // }
-  // .hero__btn:hover {
-  //   animation-name: gradientAnimation;
-  //    background: linear-gradient(135deg, $title, transparent);
-  // }
-  // @keyframes gradientAnimation {
-  //   from {
-  //     background: linear-gradient(135deg, $title, transparent);
-  //   } to {
-  //     background: linear-gradient(135deg, transparent, $title);
-  //   }
-  // }
   
   @media screen and (min-width: 720px) {
     .fav {
