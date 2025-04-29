@@ -213,7 +213,6 @@ body {
   height: 13px;
   top: 2px;
   fill: rgb(147, 147, 147);
-  margin: 0 0 0 10px;
 }
 .header .header__btn-dark .header__circle {
   background-color: #fff;
@@ -721,6 +720,14 @@ body.light-theme .hero__btn {
   padding-bottom: 60px;
   text-align: center;
   border-bottom: 1px solid #939393;
+  padding-top: 60px;
+}
+.fav__title {
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat" sans-serif;
+  font-weight: 900;
+  font-size: 50px;
 }
 .fav__list {
   display: flex;
