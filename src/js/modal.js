@@ -104,9 +104,7 @@ if (refs.dataCards) {
       <h2 class='fav__name'>{{info}}</h2>
       <p class='fav__date'>{{date}}</p>
       <span class='fav__place'>
-        <svg class='fav__place-icon' width='7' height='10'>
-          <use href='#'></use>
-        </svg>
+            <img src="./images/gps.png" alt="">
         {{venue}}
       </span>
     </li>

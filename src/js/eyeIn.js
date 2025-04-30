@@ -7,11 +7,11 @@ let isOpen = false;
 
 btn.addEventListener('click', () => {
     if (isOpen) {
-        icon.setAttribute('href', `${symbolDefs}#icon-closed-eye-icon`);
+        icon.setAttribute('href', './images/tabler-icon-eye-closed.png');
         input.type = 'password';
         isOpen = false;
     } else {
-        icon.setAttribute('href', `${symbolDefs}#icon-open-eye-icon`);
+        icon.setAttribute('href', './images/tabler-icon-open-eye.png');
         input.type = 'text';
         isOpen = true;
     }

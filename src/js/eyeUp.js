@@ -1,5 +1,4 @@
 "use strict"
-import symbolDefs from '../images/symbol-defs.svg';
 const btnPass = document.querySelector('#eye-password');
 const iconPass = document.querySelector('#eye-pass use');
 const inputPass = document.querySelector('#signUp-password');
@@ -8,11 +7,11 @@ let isOpenPass = false;
 btnPass.addEventListener('click', (e) => {
     e.preventDefault();
     if (isOpenPass) {
-        iconPass.setAttribute('href', `${symbolDefs}#icon-closed-eye-icon`);
+        iconPass.setAttribute('href', './images/tabler-icon-eye-closed.png');
         inputPass.type = 'password';
         isOpenPass = false;
     } else {
-        iconPass.setAttribute('href', `${symbolDefs}#icon-open-eye-icon`);
+        iconPass.setAttribute('href', './images/tabler-icon-open-eye.png');
         inputPass.type = 'text';
         isOpenPass = true;
     } 
@@ -27,11 +26,11 @@ let isOpenConf = false;
 btnConf.addEventListener('click', (e) => {
     e.preventDefault();
     if (isOpenConf) {
-        iconConf.setAttribute('href', `${symbolDefs}#icon-closed-eye-icon`);
+        iconConf.setAttribute('href', './images/tabler-icon-eye-closed.png');
         inputConf.type = 'password';
         isOpenConf = false;
     } else {
-        iconConf.setAttribute('href', `${symbolDefs}#icon-open-eye-icon`);
+        iconConf.setAttribute('href', './images/tabler-icon-open-eye.png');
         inputConf.type = 'text';
         isOpenConf = true;
     } 
