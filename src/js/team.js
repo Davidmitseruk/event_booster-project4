@@ -23,8 +23,8 @@ const teamItems = document.querySelectorAll('.footer__team-item');
     teamNumber.addEventListener('click', e => {
       const id = parseInt(e.target.id);
       search(id);
-      teamNumbers.forEach(btn => btn.classList.remove('active'));
-      e.target.classList.add('active');
+      teamNumbers.forEach(btn => btn.classList.remove('.footer__btn-active'));
+      e.target.classList.add('.footer__btn-active');
     });
   });
 
