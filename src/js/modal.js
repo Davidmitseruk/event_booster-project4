@@ -9,6 +9,11 @@ const refs = {
 
 const template = `<div class='backdrop__poster is-hidden'>
   <div class='modal__poster'>
+    <button class="modal__btn-close">
+      <svg class="modal__close-icon">
+        <use href="../src/images/symbol-defs.svg#icon-close-icon"></use>
+      </svg>
+    </button>
     <img src='{{image}}' alt='Poster Image' class='modal__poster-small' />
     <div class="modal__main-wrap">
         <div class='modal__poster-img'>
@@ -35,9 +40,13 @@ const template = `<div class='backdrop__poster is-hidden'>
             </div>
             <div class='modal__block'>
                 <h2 class='modal__title'>PRICES</h2>
-                <p class='modal__text'>{{priceStandard}}</p>
+                <p class='modal__text'><svg class="modal__icon">
+                  <use href="/src/images/symbol-defs.svg#icon-ticket1icon"></use>
+                </svg> {{priceStandard}}</p>
                 <button class="modal__poster-btn">BUY TICKETS</button>
-                <p class='modal__text'>{{priceVIP}}</p>
+                <p class='modal__text'><svg class="modal__icon">
+                  <use href="/src/images/symbol-defs.svg#icon-ticket1icon"></use>
+                </svg> {{priceVIP}}</p>
                 <button class="modal__poster-btn">BUY TICKETS</button>
             </div>
          </div>
@@ -57,34 +66,36 @@ if (refs.dataCards) {
       const cardId = cardEl.dataset.id;
       await fetchItem(cardId);
 
-// const add = document.querySelector('#addBtn');
-const list = document.querySelector('.fav__list');
-let favsArr = [];
+      // const add = document.querySelector('#addBtn');
+      const list = document.querySelector('.fav__list');
+      let favsArr = [];
 
-document.body.addEventListener('click', async (e) => {
-  if (e.target && e.target.id === 'addBtn'){
-  try {
-    console.log(e.target.dataset.id);
-    const item = await fetchItem(e.target.dataset.id);
-    const data = formatEventData(item);
-    console.log(data);
-    favsArr.push(data);
-    render(favsArr);
-  }  catch (error) {
-    console.log(error);
-  }
-}
-});
+      document.body.addEventListener('click', async e => {
+        if (e.target && e.target.id === 'addBtn') {
+          try {
+            console.log(e.target.dataset.id);
+            const item = await fetchItem(e.target.dataset.id);
+            const data = formatEventData(item);
+            console.log(data);
+            favsArr.push(data);
+            render(favsArr);
+          } catch (error) {
+            console.log(error);
+          }
+        }
+      });
 
-function render(events) {
-  if (events.length === 0){
-    list.innerHTML = '<li><p>There are not favourites events</p></li>';
-    return;
-  }
-  const validEvents = events.filter(event => 
-    event?.dates?.start?.localDate && event?._embedded?.venues?.[0]?.name
-  );
-  const templateSource = `
+      function render(events) {
+        if (events.length === 0) {
+          list.innerHTML = '<li><p>There are not favourites events</p></li>';
+          return;
+        }
+        const validEvents = events.filter(
+          event =>
+            event?.dates?.start?.localDate &&
+            event?._embedded?.venues?.[0]?.name
+        );
+        const templateSource = `
          {{#each this}}
     <li class='fav__item' data-id="{{id}}">
       <div class='fav__img-wrap'>
@@ -101,12 +112,11 @@ function render(events) {
     </li>
   {{/each}}
   `;
-  
-  const template = Handlebars.compile(templateSource);
-  const markUp = template(validEvents);
-  list.insertAdjacentHTML('beforeend', markUp);
-}
 
+        const template = Handlebars.compile(templateSource);
+        const markUp = template(validEvents);
+        list.insertAdjacentHTML('beforeend', markUp);
+      }
     }
   });
 } else {
@@ -116,10 +126,10 @@ function render(events) {
 async function fetchItem(id) {
   try {
     const r = await fetch(`${apiUrl}/${id}${endUrl}`);
-      const data = await r.json();
-      console.log(data)
-      const formattedData = data ? formatEventData(data) : {};
-   
+    const data = await r.json();
+    console.log(data);
+    const formattedData = data ? formatEventData(data) : {};
+
     const modalHtml = modalTemplate(formattedData);
     refs.modalContainer.innerHTML = modalHtml;
 
@@ -140,10 +150,9 @@ async function fetchItem(id) {
       }
     });
     return formattedData;
-
   } catch (error) {
     console.error(error, `Error with fetch current id item`);
-  };
+  }
 }
 
 function formatEventData(data) {

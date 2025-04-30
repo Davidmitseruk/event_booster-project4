@@ -35,12 +35,28 @@
 }
 
 .modal {
+  &__btn-close {
+    background-color: transparent;
+    border: none;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  &__close-icon {
+    width: 17px;
+    height: 17px;
+    fill: $title;
+    stroke: $title;
+  }
   &__poster {
     background-color: $modalBackground;
     border-radius: 150px 0;
     padding: 0 15px;
     max-width: 300px;
-    height: 100vh;
+    max-height: 100vh;
+    position: relative;
   }
   &__poster-small {
     width: 102px;
@@ -82,10 +98,15 @@
   }
   &__button {
     border: 1px solid $modalText;
-    padding: 9px 2px;
+    padding: 9px 3px;
     color: $modalText;
     background-color: transparent;
     border-radius: 5px;
+    transition: all 250ms ease-in-out;
+    font-size: 16px;
+  }
+  &__button:hover {
+    border: 1px solid $title;
   }
   &__button:not(:last-child) {
     margin-bottom: 5px;
@@ -96,13 +117,19 @@
     justify-content: center;
     margin-bottom: 104px;
   }
+  &__icon {
+    width: 24px;
+    height: 16px;
+  }
 }
 
 @media screen and (min-width: 640px) {
   .modal {
     &__poster {
+      border-radius: 230px 0;
       max-width: 600px;
       padding-left: 50px;
+      height: 831px;
     }
     &__main-wrap {
       display: flex;
@@ -131,6 +158,59 @@
     &__button:not(:last-child) {
       margin-bottom: 0;
       margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1246px) {
+  .modal {
+    &__poster {
+      height: 1023px;
+      border-radius: 300px 0;
+      max-width: 930px;
+    }
+    &__btn-close {
+      background-color: transparent;
+      border: none;
+      width: 25px;
+      height: 25px;
+    }
+    &__close-icon {
+      width: 25px;
+      height: 25px;
+      fill: $title;
+      stroke: $title;
+    }
+    &__main-wrap {
+      margin-top: 235px;
+    }
+    &__poster-img {
+      width: 360px;
+      height: 641px;
+    }
+    &__poster-small {
+      display: none;
+    }
+    &__block:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 24px;
+      margin-bottom: 7px;
+    }
+    &__text {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+    &__button {
+      padding: 10px 16px;
+    }
+    &__icon {
+      width: 29px;
+      height: 20px;
+      background-color: aqua;
+      fill: black;
     }
   }
 }
