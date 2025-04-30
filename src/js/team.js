@@ -1,5 +1,3 @@
-import team from './team.json' assert { type: 'json' };
-
 const teamNumbers = document.querySelectorAll('.footer__team-nav-btn');
 
 (() => { 
