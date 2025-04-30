@@ -83,12 +83,12 @@ height: 641px;
 .footer__link {
   color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
-  height: 120px;
   padding: 0 20px;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: color 250ms ease-in-out;
 }
 
 .footer__content {
@@ -103,19 +103,8 @@ height: 641px;
 .footer__heart {
   color: rgba(255, 0, 0, 0.4);
 }
-
-.footer__link {
-  display: inline;
-  background-color: #fff;
-  color: #000;
-  text-decoration: none;
-  padding: 2px 6px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
 .footer__link:hover {
-  background-color: #a259ff;
-  color: #fff;
+  color: #a259ff;
 }
 .back-to-top {
   position: fixed;
