@@ -4,20 +4,19 @@
   background-size: cover, contain;
   background-repeat: no-repeat, no-repeat;
   position: relative;
-  &__logo {
-    position: absolute;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &__sign {
     display: flex;
-    justify-content: end;
     gap: 15px;
     padding-top: 15px;
   }
   &__logo {
-    // position: absolute;
+    display: flex;
     fill: $text;
-    // top: 0;
-    // left: 0;
   }
   &__logo-icon {
     width: 106px;
@@ -45,20 +44,22 @@
     background-color: transparent;
     text-decoration: none;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     color: $text;
     border: transparent;
+    padding: 0;
   }
   &__sign-up {
     cursor: pointer;
     background-color: transparent;
     text-decoration: none;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     color: $text;
     border: transparent;
+    padding: 0;
   }
 
   &__inputs {
@@ -154,33 +155,28 @@
 
 @media screen and (max-width: 779px) {
   .header {
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     &__title {
       margin-top: 100px;
     }
     &__logo {
-      width: 230px;
       height: 150px;
     }
-    &__sign-in, &__sign-up {
-      display: none;
-    }
-    &__profile {
+    &__sign {
       display: flex;
-      background-color: transparent;
-      border: none;
+      flex-direction: column;
     }
-    &__profile-svg {
-      width: 20px;
-      height: 26px;
-      fill: none;
-      stroke: $text;
-    }
-    // &__sign {
-    //   display: none;
-    // }
   }
 
   .header {
+     &__nav {
+      display: flex;
+      justify-content: space-between;
+    }
     &__central {
       display: flex;
       flex-direction: column;
@@ -261,11 +257,6 @@ body.light-theme {
   color: $modalSecondaryText;
 }
 
-// body.light-theme .header {
-//   background-image: none;
-//   // background: url(./src/mercedes-benz_s-class__588754625hd.webp);
-// }
-
 body.light-theme .star {
   background-color: $title;
 }
@@ -294,66 +285,4 @@ body.light-theme footer {
 
 body.light-theme .hero__btn {
   color: $modalSecondaryText;
-}
-
-
-
-
-
-/* Стилі для бекдропу модального вікна */
-.header-modal__backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон */
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  z-index: 1000;
-}
-
-/* Стилі для видимого бекдропу */
-.header-modal__backdrop:not(.header-is-hidden) {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Стилі для самого модального вікна */
-.header-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  width: 90%;
-  opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-/* Стилі для видимого модального вікна */
-.header-modal__backdrop:not(.is-hidden) .header-modal {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-}
-
-body.no-scroll {
-  overflow: hidden;
-}
-.header-modal {
-  background-color: $modalBackground;
-  border-radius: 50px 0 50px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &__sign-in, &__sign-up {
-    background-color: transparent;
-    border: none;
-    color: $modalText;
-  }
 }
