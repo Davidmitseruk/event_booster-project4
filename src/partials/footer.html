@@ -19,40 +19,96 @@
           />
         </svg>
       </span>
-      by
-      <a href="#" class="footer__link">GoITeens Students</a>
+      by <button class="footer__link" type="button" data-team-open>GoITeens Students</button>
     </p>
-    
-    <div class="footer__modal-window" style="display: none">
-      <!-- <svg></svg> -->
-      <div class="footer__team-content">
-        <div class="footer__team-img">
-          <img src="../src/images/pic-desktop@1x.png" alt="cnjkwnevje" class="footer__team-photo" />
-        </div>
-        <div class="footer__team-info">
-          <ul class="footer__team-list">
-            <li class="footer__team-item">
-              <h2 class="footer__team-title">WHO</h2>
-              <p class="footer__team-text">something</p>
+    <div class="backdrop is-hidden" data-team>
+      <div class="footer__modal-window" style="display: none;">
+        <button class="footer__close-team-modal">
+          <svg class="footer__icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close-icon"></use>
+        </svg>
+        </button>
+        
+        <div class="footer__team-content">
+          <div class="footer__team-img">
+            <img src="#" alt="#" class="footer__team-photo">
+          </div>
+          <div class="footer__team-info">
+            <ul class="footer__team-list">
+  
+              <li class="footer__team-item">
+                <h2 class="footer__team-title">
+                  WHO
+                </h2>
+                <p class="footer__team-text" id="team-name">
+                  
+                </p>
+              </li>
+  
+              <li class="footer__team-item">
+                <h2 class="footer__team-title">
+                  POSITION
+                </h2>
+                <p class="footer__team-text" id="team-position">
+                  
+                </p>
+              </li>
+  
+              <li class="footer__team-item">
+                <h2 class="footer__team-title" >
+                  CONTRIBUTION
+                </h2>
+                <p class="footer__team-text" id="team-contribution">
+                  
+                </p>
+              </li>
+  
+              <li class="footer__team-item">
+                <h2 class="footer__team-title">
+                  ADDITIONALLY
+                </h2>
+                <p class="footer__team-text" id="team-additionally">
+                 
+                </p>
+              </li>
+  
+            </ul>
+          </div>
+          <ul>
+            <li class="footer__navigation-team">
+              <button class="footer__team-nav-btn" id="1">
+                1
+              </button>
             </li>
-
-            <li class="footer__team-item">
-              <h2 class="footer__team-title">POSITION</h2>
-              <p class="footer__team-text">something</p>
+            <li class="footer__navigation-team">
+              <button class="footer__team-nav-btn" id="2">
+                2
+              </button>
             </li>
-
-            <li class="footer__team-item">
-              <h2 class="footer__team-title">CONTRIBUTION</h2>
-              <p class="footer__team-text">something</p>
+            <li class="footer__navigation-team">
+              <button class="footer__team-nav-btn" id="3">
+                3
+              </button>
             </li>
-
-            <li class="footer__team-item">
-              <h2 class="footer__team-title">ADDITIONALLY</h2>
-              <p class="footer__team-text">something</p>
+            <li class="footer__navigation-team">
+              <button class="footer__team-nav-btn" id="4">
+                4
+              </button>
+            </li>
+            <li class="footer__navigation-team">
+              <button class="footer__team-nav-btn" id="5">
+                5
+              </button>
+            </li>
+            <li class="footer__navigation-team">
+              <button class="footer__team-nav-btn" id="6">
+                6
+              </button>
             </li>
           </ul>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </footer>
