@@ -94,12 +94,12 @@ let e,t;var n="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self
                 </svg> {{priceVIP}}</p>
                 <button class="modal__poster-btn">BUY TICKETS</button>
             </div>
+            <div class='modal__btn-wrap'>
+              <button class='modal__button'>MORE FROM THIS AUTHOR</button>
+              <button class='modal__button' data-id="{{id}}" id="addBtn">ADD TO FAVOURITE</button>
+            </div>
          </div>
     </div>
-    <div class='modal__btn-wrap'>
-        <button class='modal__button'>MORE FROM THIS AUTHOR</button>
-          <button class='modal__button' data-id="{{id}}" id="addBtn">ADD TO FAVOURITE</button>
-     </div>
   </div>
 </div>`,O=Handlebars.compile(j);async function F(e){try{let t=await fetch(`https://app.ticketmaster.com/discovery/v2/events/${e}.json?apikey=ketKoDmJUHl7Ak2zwntgxzeJRJUvRMXS`),n=await t.json();console.log(n);let a=n?P(n):{},s=O(a);N.modalContainer.innerHTML=s;let o=document.querySelector(".backdrop__poster");return o.classList.remove("is-hidden"),o.addEventListener("click",e=>{e.target===o&&(o.classList.add("is-hidden"),N.modalContainer.innerHTML="")}),a}catch(e){console.error(e,"Error with fetch current id item")}}function P(e){var t,n,a,s,o,l,i,c,r,d,m,u,_,p,h,v,g,y,f,b,L,w,k,E,T,S,M;return{id:e.id,image:(null==(n=e.images)||null==(t=n[0])?void 0:t.url)||"",info:(M=e.info,M?(M.match(/[^.!?]+[.!?]+/g)||[M]).slice(0,2).join(" ").trim()||M:"No aleviable"),date:(null==(s=e.dates)||null==(a=s.start)?void 0:a.localDate)||"N/A",time:(null==(l=e.dates)||null==(o=l.start)?void 0:o.localTime)?e.dates.start.localTime.slice(0,5):"N/A",location:(null==(r=e._embedded)||null==(c=r.venues)||null==(i=c[0])?void 0:i.name)||"N/A",city:(null==(_=e._embedded)||null==(u=_.venues)||null==(m=u[0])||null==(d=m.city)?void 0:d.name)||"N/A",country:(null==(g=e._embedded)||null==(v=g.venues)||null==(h=v[0])||null==(p=h.country)?void 0:p.name)||"N/A",venue:(null==(b=e._embedded)||null==(f=b.venues)||null==(y=f[0])?void 0:y.name)||"N/A",artists:(null==(w=e._embedded)||null==(L=w.attractions)?void 0:L.map(e=>e.name).join(", "))||"Unknown artist",priceStandard:(null==(E=e.priceRanges)||null==(k=E[0])?void 0:k.min)?`${e.priceRanges[0].min} USD`:"N/A",priceVIP:(null==(S=e.priceRanges)||null==(T=S[0])?void 0:T.max)?`${e.priceRanges[0].max} USD`:"N/A"}}N.dataCards?N.dataCards.addEventListener("click",async e=>{let t=e.target.closest(".hero__item");if(t){let e=t.dataset.id;await F(e);let n=document.querySelector(".fav__list"),a=[];document.body.addEventListener("click",async e=>{if(e.target&&"addBtn"===e.target.id)try{console.log(e.target.dataset.id);let t=await F(e.target.dataset.id),s=P(t);console.log(s),a.push(s),function(e){if(0===e.length){n.innerHTML="<li><p>There are not favourites events</p></li>";return}let t=e.filter(e=>{var t,n,a,s,o;return(null==e||null==(n=e.dates)||null==(t=n.start)?void 0:t.localDate)&&(null==e||null==(o=e._embedded)||null==(s=o.venues)||null==(a=s[0])?void 0:a.name)}),a=`
          {{#each this}}
@@ -118,4 +118,4 @@ let e,t;var n="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self
     </li>
   {{/each}}
   `,s=Handlebars.compile(a)(t);n.insertAdjacentHTML("beforeend",s)}(a)}catch(e){console.log(e)}})}}):console.error("Element not found");
-//# sourceMappingURL=event_booster-project4.aefaa8de.js.map
+//# sourceMappingURL=event_booster-project4.f6425e59.js.map
