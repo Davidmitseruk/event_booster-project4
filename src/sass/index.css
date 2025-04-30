@@ -95,18 +95,25 @@ body {
   background-image: url(/src/images/pic-desktop@1x.png), url(/src/images/pic-desktop@1x.webp);
   background-size: cover, contain;
   background-repeat: no-repeat, no-repeat;
+  position: relative;
 }
-.header__logo {
-  position: absolute;
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header__sign {
   display: flex;
-  justify-content: end;
   gap: 15px;
   padding-top: 15px;
 }
 .header__logo {
-  position: absolute;
+  display: flex;
+  fill: #fff;
+}
+.header__logo-icon {
+  width: 106px;
+  height: 90px;
 }
 .header__central {
   display: flex;
@@ -117,7 +124,7 @@ body {
 }
 .header__title {
   text-align: center;
-  width: 588px;
+  max-width: 588px;
   font-family: "Montserrat" sans-serif;
   margin-top: 40px;
   margin-bottom: 52px;
@@ -130,20 +137,22 @@ body {
   background-color: transparent;
   text-decoration: none;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   color: #fff;
   border: transparent;
+  padding: 0;
 }
 .header__sign-up {
   cursor: pointer;
   background-color: transparent;
   text-decoration: none;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   color: #fff;
   border: transparent;
+  padding: 0;
 }
 .header__inputs {
   display: flex;
@@ -230,13 +239,29 @@ body {
   margin-right: 6px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+.header__profile {
+  display: none;
+}
 
 @media screen and (max-width: 779px) {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__title {
+    margin-top: 100px;
+  }
   .header__logo {
-    position: absolute;
+    height: 150px;
   }
   .header__sign {
-    display: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
   }
   .header__central {
     display: flex;
@@ -702,7 +727,7 @@ body.light-theme .hero__btn {
   width: 600px;
   width: 90%;
   position: relative;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .modal__close {
@@ -712,10 +737,183 @@ body.light-theme .hero__btn {
   cursor: pointer;
 }
 
-.modal__poster-small {
+.modal__poster-img {
   display: none;
 }
 
+.modal__btn-close {
+  background-color: transparent;
+  border: none;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.modal__close-icon {
+  width: 17px;
+  height: 17px;
+  fill: #dc56c5;
+  stroke: #dc56c5;
+}
+.modal__poster {
+  background-color: #fff2fd;
+  border-radius: 150px 0;
+  padding: 0 15px;
+  max-width: 300px;
+  max-height: 100vh;
+  position: relative;
+}
+.modal__poster-small {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 75px;
+  margin-bottom: 18px;
+}
+.modal__main-wrap {
+  margin-bottom: 25px;
+}
+.modal__wrap {
+  text-align: center;
+}
+.modal__block:not(:last-child) {
+  margin-bottom: 10px;
+}
+.modal__title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #dc56c5;
+  margin-bottom: 5px;
+}
+.modal__text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #0e0e0e;
+}
+.modal__poster-btn {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 9px 18px;
+  background-color: #4c00fe;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #4c00fe;
+}
+.modal__button {
+  border: 1px solid #4c00fe;
+  padding: 9px 3px;
+  color: #4c00fe;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 250ms ease-in-out;
+  font-size: 16px;
+}
+.modal__button:hover {
+  border: 1px solid #dc56c5;
+}
+.modal__button:not(:last-child) {
+  margin-bottom: 5px;
+}
+.modal__btn-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 104px;
+}
+.modal__icon {
+  width: 24px;
+  height: 16px;
+}
+
+@media screen and (min-width: 640px) {
+  .modal__poster {
+    border-radius: 230px 0;
+    max-width: 600px;
+    padding-left: 50px;
+    height: 831px;
+  }
+  .modal__main-wrap {
+    display: flex;
+    margin-bottom: 43px;
+  }
+  .modal__poster-img {
+    display: flex;
+    border-radius: 20px 0 0 0;
+    width: 233px;
+    height: 416px;
+    margin-right: 30px;
+    overflow: hidden;
+    justify-content: center;
+  }
+  .modal__poster-big {
+    max-width: none;
+  }
+  .modal__wrap {
+    width: 265px;
+    text-align: start;
+  }
+  .modal__btn-wrap {
+    margin-bottom: 56px;
+    flex-direction: row;
+  }
+  .modal__button:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .modal__poster {
+    height: 1023px;
+    border-radius: 300px 0;
+    max-width: 930px;
+  }
+  .modal__btn-close {
+    background-color: transparent;
+    border: none;
+    width: 25px;
+    height: 25px;
+  }
+  .modal__close-icon {
+    width: 25px;
+    height: 25px;
+    fill: #dc56c5;
+    stroke: #dc56c5;
+  }
+  .modal__main-wrap {
+    margin-top: 235px;
+  }
+  .modal__poster-img {
+    width: 360px;
+    height: 641px;
+  }
+  .modal__poster-small {
+    display: none;
+  }
+  .modal__block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .modal__title {
+    font-size: 24px;
+    margin-bottom: 7px;
+  }
+  .modal__text {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  .modal__button {
+    padding: 10px 16px;
+  }
+  .modal__icon {
+    width: 29px;
+    height: 20px;
+    background-color: aqua;
+    fill: black;
+  }
+}
 .fav {
   padding-bottom: 60px;
   text-align: center;

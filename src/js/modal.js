@@ -158,7 +158,7 @@ async function fetchItem(id) {
 function formatEventData(data) {
   const limitSentences = (text, maxSentences) => {
     if (!text) {
-      ('No info available');
+      return 'No aleviable';
     }
     const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
     return sentences.slice(0, maxSentences).join(' ').trim() || text;
