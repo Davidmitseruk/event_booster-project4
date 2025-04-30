@@ -32,7 +32,7 @@
   &__title {
     text-align: center;
     max-width: 588px;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 40px;
     margin-bottom: 52px;
     font-weight: 900;
@@ -279,8 +279,8 @@ body.light-theme .hero__date {
 }
 
 body.light-theme footer {
-  background: $text;
-  color: $modalSecondaryText;
+  background-color: $modalSecondaryText;
+  color: $text;
 }
 
 body.light-theme .hero__btn {

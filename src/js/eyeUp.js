@@ -27,11 +27,11 @@ let isOpenConf = false;
 btnConf.addEventListener('click', (e) => {
     e.preventDefault();
     if (isOpenConf) {
-        iconConf.setAttribute('href', './images/symbol-defs.svg#icon-closed-eye-icon');
+        iconConf.setAttribute('href', `${symbolDefs}#icon-closed-eye-icon`);
         inputConf.type = 'password';
         isOpenConf = false;
     } else {
-        iconConf.setAttribute('href', './images/symbol-defs.svg#icon-open-eye-icon');
+        iconConf.setAttribute('href', `${symbolDefs}#icon-open-eye-icon`);
         inputConf.type = 'text';
         isOpenConf = true;
     } 
