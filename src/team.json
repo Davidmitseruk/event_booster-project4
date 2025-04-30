@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+
     "name": "David Mitseruk",
     "position": "Team Lead",
     "contribution": [],
@@ -11,7 +12,7 @@
     "name": "Nika Deeva",
     "position": "Scrummaster",
     "contribution": [],
-    "additionally": ""
+    "additionally": "Likes tennis, front-end and reading. Always ready to help and solve problems with other developers. Organizes Google Meets, tasks distribution and deadlines"
   },
   {
     "id": 3,
@@ -29,7 +30,7 @@
     "name": "Roman Kaptar",
     "position": "Frontend Developer",
     "contribution": [],
-    "additionally": ""
+    "additionally": "He loves ride bicycle and travelling. He also loves coding with HTML, CSS, JavaScript"
   },
   {
     "id": 5,
