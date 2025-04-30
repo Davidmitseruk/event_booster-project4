@@ -63,7 +63,7 @@
     height: 102px;
     border-radius: 50%;
     margin: 0 auto;
-    margin-top: 75px;
+    margin-top: 55px;
     margin-bottom: 18px;
   }
   &__main-wrap {
@@ -77,18 +77,18 @@
   }
   &__title {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color: $title;
     margin-bottom: 5px;
   }
   &__text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     color: $modalSecondaryText;
   }
   &__poster-btn {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     padding: 9px 18px;
     background-color: $modalText;
     color: $text;
@@ -103,7 +103,7 @@
     background-color: transparent;
     border-radius: 5px;
     transition: all 250ms ease-in-out;
-    font-size: 16px;
+    font-size: 14px;
   }
   &__button:hover {
     border: 1px solid $title;
@@ -112,9 +112,6 @@
     margin-bottom: 5px;
   }
   &__btn-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-bottom: 104px;
   }
   &__icon {
@@ -129,7 +126,7 @@
       border-radius: 230px 0;
       max-width: 600px;
       padding-left: 50px;
-      height: 831px;
+      max-height: 831px;
     }
     &__main-wrap {
       display: flex;
@@ -138,7 +135,6 @@
     &__poster-img {
       display: flex;
       border-radius: 20px 0 0 0;
-      width: 233px;
       height: 416px;
       margin-right: 30px;
       overflow: hidden;
@@ -148,16 +144,10 @@
       max-width: none;
     }
     &__wrap {
-      width: 265px;
       text-align: start;
     }
     &__btn-wrap {
       margin-bottom: 56px;
-      flex-direction: row;
-    }
-    &__button:not(:last-child) {
-      margin-bottom: 0;
-      margin-right: 10px;
     }
   }
 }
@@ -165,8 +155,7 @@
 @media screen and (min-width: 1246px) {
   .modal {
     &__poster {
-      height: 1023px;
-      border-radius: 300px 0;
+      max-height: 1023px;
       max-width: 930px;
     }
     &__btn-close {
@@ -182,10 +171,9 @@
       stroke: $title;
     }
     &__main-wrap {
-      margin-top: 235px;
+      margin-top: 120px;
     }
     &__poster-img {
-      width: 360px;
       height: 641px;
     }
     &__poster-small {
