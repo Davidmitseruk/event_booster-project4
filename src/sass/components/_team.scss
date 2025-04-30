@@ -1,0 +1,18 @@
+footer{
+    &__team-img{
+        border-radius: 20px 0 0 0;
+width: 360px;
+height: 641px;
+    }
+    &__team-list{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    &__team-title{
+        color: $title;
+    }
+    &__team-text{
+        color: $modalSecondaryText;
+    }
+}
