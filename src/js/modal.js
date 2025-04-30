@@ -65,56 +65,6 @@ if (refs.dataCards) {
     if (cardEl) {
       const cardId = cardEl.dataset.id;
       await fetchItem(cardId);
-
-      // const add = document.querySelector('#addBtn');
-      const list = document.querySelector('.fav__list');
-      let favsArr = [];
-
-      document.body.addEventListener('click', async e => {
-        if (e.target && e.target.id === 'addBtn') {
-          try {
-            console.log(e.target.dataset.id);
-            const item = await fetchItem(e.target.dataset.id);
-            const data = formatEventData(item);
-            console.log(data);
-            favsArr.push(data);
-            render(favsArr);
-          } catch (error) {
-            console.log(error);
-          }
-        }
-      });
-
-      function render(events) {
-        if (events.length === 0) {
-          list.innerHTML = '<li><p>There are not favourites events</p></li>';
-          return;
-        }
-        const validEvents = events.filter(
-          event =>
-            event?.dates?.start?.localDate &&
-            event?._embedded?.venues?.[0]?.name
-        );
-        const templateSource = `
-         {{#each this}}
-    <li class='fav__item' data-id="{{id}}">
-      <div class='fav__img-wrap'>
-        <img src="{{image}}" alt="{{info}}" class="hero__img-teg"/>
-      </div>
-      <h2 class='fav__name'>{{info}}</h2>
-      <p class='fav__date'>{{date}}</p>
-      <span class='fav__place'>
-            <img src="./images/gps.png" alt="">
-        {{venue}}
-      </span>
-    </li>
-  {{/each}}
-  `;
-
-        const template = Handlebars.compile(templateSource);
-        const markUp = template(validEvents);
-        list.insertAdjacentHTML('beforeend', markUp);
-      }
     }
   });
 } else {
@@ -179,9 +129,9 @@ function formatEventData(data) {
       'Unknown artist',
     priceStandard: data.priceRanges?.[0]?.min
       ? `${data.priceRanges[0].min} USD`
-      : 'N/A',
+      : '50 USD',
     priceVIP: data.priceRanges?.[0]?.max
       ? `${data.priceRanges[0].max} USD`
-      : 'N/A',
+      : '70 USD',
   };
 }
