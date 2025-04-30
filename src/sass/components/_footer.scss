@@ -8,21 +8,38 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  &__close-team-modal {
+    margin-top: 8px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    fill: $modalText;
+    background-color: transparent;
+  }
 
-  .footer__content {
-    width: 100%;
-    text-align: center;
-    height: 100%;
+  &__team-img {
+    border-radius: 20px 0 0 0;
+    width: 360px;
+    height: 641px;
+  }
+  &__team-list {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 10px;
+    gap: 1rem;
   }
-
-  .footer__text {
-    color: rgba(255, 255, 255, 0.25);
-    font-size: 12px;
+  &__team-title {
+    color: $title;
   }
+  &__team-text {
+    color: $modalSecondaryText;
+  }
+}
 
   .footer__heart {
     color: rgba(255, 0, 0, 0.4);
@@ -88,8 +105,19 @@
     height: 40px;
     stroke: #a259ff;
   }
+
+
+.back-to-top:hover {
+  border-color: #fff;
+  transform: translateY(-4px);
 }
-.footer__modal-window {
+
+.back-to-top svg {
+  width: 40px;
+  height: 40px;
+  stroke: #a259ff;
+}
+.footer__modal-window{
   position: relative;
   top: 50%;
   left: 50%;
@@ -102,6 +130,7 @@
   border-radius: 150px 0;
   background-color: $modalBackground;
 
+}
   .footer__close-team-modal {
     margin-top: 8px;
     width: 30px;
@@ -123,6 +152,10 @@
     border-radius: 20px 0 0 0;
     width: 360px;
     height: 641px;
+  .footer__team-img{
+      border-radius: 20px 0 0 0;
+      width: 360px;
+      height: 641px;
   }
   .footer__team-list {
     display: flex;
@@ -135,4 +168,11 @@
   .footer__team-text {
     color: $modalSecondaryText;
   }
+
 }
+
+
+.hide {
+  display: none;
+}
+
