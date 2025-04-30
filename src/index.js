@@ -10,3 +10,4 @@ import './js/eyeUp';
 import './js/country'
 import './js/modal';
 import './js/country';
+import './js/team';
