@@ -1,26 +1,26 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms,
-      visibility 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms;
-      opacity: 1;
-  }
-  .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  .signIn {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 272px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms,
+    visibility 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms;
+  opacity: 1;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.signIn {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 272px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(1);
   transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms;
@@ -29,73 +29,86 @@
 
   &__close-button {
     margin-top: 8px;
-    // margin-left: 490px;
     width: 30px;
     height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: none;
     box-sizing: border-box;
     cursor: pointer;
-    border-radius: 50%;
-    // background-image: url(../imges/cross1.svg);
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: center;
     position: absolute;
-     right: 15px;
-    background-color: pink;
+    right: 15px;
+    fill: $modalText;
+    background-color: transparent;
   }
-  &__title{
+  &__title {
     font-weight: 600;
-font-size: 20px;
-color: $title;
-text-align: center;
-padding-top: 70px;
-padding-bottom: 20px;
+    font-size: 20px;
+    color: $title;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
   }
-  &__description{
+  &__description {
     text-align: start;
     font-weight: 400;
-font-size: 18px;
-color: $modalSecondaryText;
-margin: 0 auto;
-max-width: 222px;
-display: flex;
-justify-content: center;
+    font-size: 18px;
+    color: $modalSecondaryText;
+    margin: 0 auto;
+    max-width: 222px;
+    display: flex;
+    justify-content: center;
   }
-  &__form{
+  &__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
   }
-  &__label{
+  &__label {
     display: flex;
     flex-direction: column;
     font-weight: 500;
-font-size: 16px;
-color: $modalText;
-margin-bottom: 25px;
+    font-size: 16px;
+    color: $modalText;
+    margin-bottom: 25px;
+    position: relative;
   }
-  &__field{
+  &__field {
     border: 1px solid $modalText;
-border-radius: 5px;
-padding: 10px;
-max-width: 222px;
-font-weight: 500;
-font-size: 16px;
-color: $modalInputText;
-margin-top: 10px;
-  }
-  &__text{
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 222px;
     font-weight: 500;
-font-size: 16px;
-text-align: center;
-color: $modalSecondaryText;
-margin-bottom: 10px;
+    font-size: 16px;
+    color: $modalInputText;
+    margin-top: 10px;
+    &:focus {
+      border: 3px solid $modalText;
+    }
   }
-  &__line{
+  &__btn-eye {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 38px;
+    left: 195px;
+    cursor: pointer;
+  }
+  &__eye {
+    fill: none;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: $modalSecondaryText;
+    margin-bottom: 10px;
+  }
+  &__line {
     height: 1px;
     width: 223px;
     background-color: $modalText;
@@ -103,74 +116,74 @@ margin-bottom: 10px;
     display: flex;
     justify-content: center;
   }
-&__confirm{
+  &__confirm {
     font-weight: 500;
-font-size: 16px;
-margin-top: 15px;
-text-align: center;
-color: #0e0e0e;
-}
-&__btn-wrap{
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    color: #0e0e0e;
+  }
+  &__btn-wrap {
     display: flex;
     justify-content: center;
-}
-&__btn{
+  }
+  &__btn {
     border: 1px solid $modalText;
-border-radius: 5px;
-padding: 10px 16px;
-font-weight: 500;
-font-size: 16px;
-color: $modalText;
-background-color: transparent;
-margin-top: 56px;
-margin-bottom: 70px;
-cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $modalText;
+    background-color: transparent;
+    margin-top: 56px;
+    margin-bottom: 70px;
+    cursor: pointer;
+  }
 }
-}
-@media screen and (min-width: 640px){
-    .signIn{
-        max-width: 595px;
-        &__title{
-            padding-top: 80px;
-        }
-        &__description{
-            text-align: center;
-            max-width: 300px;
-        }
-        &__form{
-            flex-direction: row;
-            justify-content: space-around;
-            margin-top: 33px;
-    margin-bottom: 20px;
-        }
-        &__field{
-            max-width: 255px;
-        }
-        &__text{
-            max-width: 318px;
-            margin: 0 auto;
-            padding-bottom: 10px;
-        }
-        &__line{
-            width: 300px;
-        }
-        &__btn{
-            margin-top: 20px;
-            margin-bottom: 80px;
-        }
+@media screen and (min-width: 640px) {
+  .signIn {
+    max-width: 595px;
+    &__title {
+      padding-top: 80px;
     }
-}
-@media screen and (min-width: 1246px){
-    .signIn{
-        max-width: 930px;
-        &__title{
-            font-weight: 600;
-font-size: 24px;
-        }
-        &__form{
-margin-top: 20px;
-margin-bottom: 30px;
-justify-content: space-evenly;
-        }
+    &__description {
+      text-align: center;
+      max-width: 300px;
     }
+    &__form {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 33px;
+      margin-bottom: 20px;
+    }
+    &__field {
+      max-width: 255px;
+    }
+    &__text {
+      max-width: 318px;
+      margin: 0 auto;
+      padding-bottom: 10px;
+    }
+    &__line {
+      width: 300px;
+    }
+    &__btn {
+      margin-top: 20px;
+      margin-bottom: 80px;
+    }
+  }
+}
+@media screen and (min-width: 1246px) {
+  .signIn {
+    max-width: 930px;
+    &__title {
+      font-weight: 600;
+      font-size: 24px;
+    }
+    &__form {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      justify-content: space-evenly;
+    }
+  }
 }
