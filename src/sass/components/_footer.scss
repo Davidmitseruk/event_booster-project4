@@ -9,6 +9,57 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+   
+
+   &__modal-window{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 272px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms;
+    border-radius: 150px 0;
+    background-color: $modalBackground;
+  
+    &__close-team-modal {
+      margin-top: 8px;
+      width: 30px;
+      height: 30px;
+      border: none;
+      box-sizing: border-box;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 15px;
+      fill: $modalText;
+      background-color: transparent;
+    }
+   }
+
+    &__team-img{
+        border-radius: 20px 0 0 0;
+width: 360px;
+height: 641px;
+    }
+    &__team-list{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    &__team-title{
+        color: $title;
+    }
+    &__team-text{
+        color: $modalSecondaryText;
+    }
+
 }
 
 .footer__content {

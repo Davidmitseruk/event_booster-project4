@@ -8,12 +8,10 @@ let items = [];
 let pageGroupStart = 1;
 
 const refs = {
-  itemsContainer: document.getElementById('hero__items'),
+  itemsContainer: document.querySelector('.hero__list'),
   paginationContainer: document.getElementById('hero__pagination'),
 };
 const templateSource = `
-  <div class='hero__template'>
-    <ul class='hero__list'>
       {{#each items}}
         <li class='hero__item'  data-id="{{id}}">
           <div class='hero__img-wrap'>
@@ -29,8 +27,6 @@ const templateSource = `
           </span>
         </li>
       {{/each}}
-    </ul>
-  </div>
 `;
 const template = Handlebars.compile(templateSource);
 
@@ -42,7 +38,7 @@ async function fetchItems(page) {
       const data = await response.json();
 
       items = data._embedded?.events || [];
-      // totalPages = data.page.totalPages || 1;
+
 
       if (!items.length) {
         refs.itemsContainer.innerHTML =

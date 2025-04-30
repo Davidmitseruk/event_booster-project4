@@ -8,3 +8,6 @@ import './js/signUp';
 import './js/eyeIn';
 import './js/eyeUp';
 import './js/country'
+import './js/modal';
+// import './js/fav';
+import './js/header-modal';
