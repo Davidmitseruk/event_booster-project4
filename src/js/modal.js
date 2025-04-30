@@ -49,12 +49,12 @@ const template = `<div class='backdrop__poster is-hidden'>
                 </svg> {{priceVIP}}</p>
                 <button class="modal__poster-btn">BUY TICKETS</button>
             </div>
+            <div class='modal__btn-wrap'>
+              <button class='modal__button'>MORE FROM THIS AUTHOR</button>
+              <button class='modal__button' data-id="{{id}}" id="addBtn">ADD TO FAVOURITE</button>
+            </div>
          </div>
     </div>
-    <div class='modal__btn-wrap'>
-        <button class='modal__button'>MORE FROM THIS AUTHOR</button>
-          <button class='modal__button' data-id="{{id}}" id="addBtn">ADD TO FAVOURITE</button>
-     </div>
   </div>
 </div>`;
 const modalTemplate = Handlebars.compile(template);
