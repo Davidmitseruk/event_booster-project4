@@ -10,9 +10,7 @@ const refs = {
 const template = `<div class='backdrop__poster is-hidden'>
   <div class='modal__poster'>
     <button class="modal__btn-close">
-      <svg class="modal__close-icon">
-        <use href="../src/images/symbol-defs.svg#icon-close-icon"></use>
-      </svg>
+      <img href="./images/close.png" alt="close">
     </button>
     <img src='{{image}}' alt='Poster Image' class='modal__poster-small' />
     <div class="modal__main-wrap">
@@ -40,13 +38,9 @@ const template = `<div class='backdrop__poster is-hidden'>
             </div>
             <div class='modal__block'>
                 <h2 class='modal__title'>PRICES</h2>
-                <p class='modal__text'><svg class="modal__icon">
-                  <use href="/src/images/symbol-defs.svg#icon-ticket1icon"></use>
-                </svg> {{priceStandard}}</p>
+                <p class='modal__text'><img class="modal__icon" href="/images/ticket1.png" alt="tickets"> {{priceStandard}}</p>
                 <button class="modal__poster-btn">BUY TICKETS</button>
-                <p class='modal__text'><svg class="modal__icon">
-                  <use href="/src/images/symbol-defs.svg#icon-ticket1icon"></use>
-                </svg> {{priceVIP}}</p>
+                <p class='modal__text'><img class="modal__icon" href="/images/ticket1.png" alt="tickets"> {{priceVIP}}</p>
                 <button class="modal__poster-btn">BUY TICKETS</button>
             </div>
             <div class='modal__btn-wrap'>
@@ -82,14 +76,14 @@ async function fetchItem(id) {
     refs.modalContainer.innerHTML = modalHtml;
 
     const backdrop = document.querySelector('.backdrop__poster');
-    //  const modalCloseBtn = document.querySelector('.modal__close');
+     const modalCloseBtn = document.querySelector('.modal__btn-close');
 
     backdrop.classList.remove('is-hidden');
 
-    //   modalCloseBtn.addEventListener('click', () => {
-    //     backdrop.classList.add('is-hidden');
-    //     refs.modalContainer.innerHTML = '';
-    //   });
+      modalCloseBtn.addEventListener('click', () => {
+        backdrop.classList.add('is-hidden');
+        refs.modalContainer.innerHTML = '';
+      });
 
     backdrop.addEventListener('click', e => {
       if (e.target === backdrop) {
