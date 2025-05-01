@@ -12,7 +12,7 @@ const refs = {
 const template = `<div class='backdrop__poster is-hidden'>
   <div class='modal__poster'>
     <button class="modal__btn-close">
-      <img src="./${imgSrc}" alt="close" />
+      <img src="../images/${imgSrc}" alt="close" />
     </button>
     <img src='{{image}}' alt='Poster Image' class='modal__poster-small' />
     <div class="modal__main-wrap">
