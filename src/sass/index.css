@@ -470,9 +470,8 @@ body.light-theme .hero__btn {
   top: 38px;
   left: 195px;
   cursor: pointer;
-}
-.signIn__eye {
-  fill: none;
+  width: 24px;
+  height: 24px;
 }
 .signIn__text {
   font-weight: 500;
@@ -642,6 +641,8 @@ body.light-theme .hero__btn {
   top: 38px;
   left: 195px;
   cursor: pointer;
+  width: 24px;
+  height: 24px;
 }
 .signUp__eye {
   fill: none;
@@ -1319,6 +1320,7 @@ body.light-theme .hero__btn {
   border: 1px solid #fff2fd;
   background-color: transparent;
   border-radius: 10px 0;
+  cursor: pointer;
 }
 
 .footer__btn-active {
