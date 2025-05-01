@@ -1,26 +1,40 @@
-<div class="backdrop is-hidden" data-signIn> 
-    <div class="signIn">
-        <button data-signIn-close type="button" class="signIn__close-button">
-             <img src="./images/close.png" alt="">
+<div class="backdrop is-hidden" data-signIn>
+  <div class="signIn">
+    <button data-signIn-close type="button" class="signIn__close-button">
+      <img src="./images/close.png" alt="close" />
+    </button>
+    <h2 class="signIn__title">Sign In</h2>
+    <span class="signIn__description">Sign in to access your account</span>
+    <form class="signIn__form">
+      <label class="signIn__label"
+        >Your login
+        <input
+          type="email"
+          class="signIn__field"
+          id="signIn-login"
+          placeholder="example@gmail.com"
+        />
+      </label>
+      <label class="signIn__label"
+        >Your password
+        <input
+          type="password"
+          class="signIn__field"
+          id="signIn-password"
+          placeholder="********"
+        />
+        <button type="button" class="signIn__btn-eye">
+          <img src="./images/tabler-icon-eye-closed.png" alt="close-eye" />
         </button>
-        <h2 class="signIn__title">Sign In</h2>
-        <span class="signIn__description">Sign in to access your account</span>
-        <form class="signIn__form">
-            <label class="signIn__label">Your login
-                <input type="email" class="signIn__field" id="signIn-login" placeholder="example@gmail.com">
-            </label>
-            <label class="signIn__label">Your password
-                <input type="password" class="signIn__field" id="signIn-password" placeholder="********">
-               <button type="button" class="signIn__btn-eye">
-                <img src="./images/tabler-icon-eye-closed.png" alt="">
-            </button>
-            </label>
-        </form>
-        <p class="signIn__text">Hello, we are glad to see you again!  Thank you for choosing us :D</p>
-        <div class="signIn__line"></div>
-        <p class="signIn__confirm">Confirm your login information</p>
-        <div class="signIn__btn-wrap">
-            <button class="signIn__btn">SIGN IN</button>
-        </div>
+      </label>
+    </form>
+    <p class="signIn__text">
+      Hello, we are glad to see you again! Thank you for choosing us :D
+    </p>
+    <div class="signIn__line"></div>
+    <p class="signIn__confirm">Confirm your login information</p>
+    <div class="signIn__btn-wrap">
+      <button class="signIn__btn">SIGN IN</button>
     </div>
+  </div>
 </div>
