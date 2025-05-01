@@ -1,13 +1,13 @@
 "use strict"
 import symbolDefs from '../images/symbol-defs.svg';
 const btn = document.querySelector('.signIn__btn-eye');
-const icon = document.querySelector('.signIn__eye use');
+const icon = document.querySelector('.signIn__eye');
 const input = document.querySelector('#signIn-password');
 let isOpen = false;
 
 btn.addEventListener('click', () => {
     if (isOpen) {
-        icon.setAttribute('href', './images/tabler-icon-eye-closed.png');
+        icon.setAttribute('src', './images/tabler-icon-eye-closed.png');
         input.type = 'password';
         isOpen = false;
     } else {
