@@ -1,5 +1,4 @@
-import closeIcon from '../images/close.png';
-import ticketIcon from '../images/ticket1.png';
+const imgSrc = 'close.png';
 
 const API_KEY = 'ketKoDmJUHl7Ak2zwntgxzeJRJUvRMXS';
 const apiUrl = `https://app.ticketmaster.com/discovery/v2/events`;
@@ -13,7 +12,7 @@ const refs = {
 const template = `<div class='backdrop__poster is-hidden'>
   <div class='modal__poster'>
     <button class="modal__btn-close">
-      <img src="./close.png" alt="close" />
+      <img src="./${imgSrc}" alt="close" />
     </button>
     <img src='{{image}}' alt='Poster Image' class='modal__poster-small' />
     <div class="modal__main-wrap">
