@@ -149,3 +149,4 @@ function setupPagination() {
 }
 
 fetchItems(currentPage);
+export { fetchItems };

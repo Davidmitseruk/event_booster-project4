@@ -8,6 +8,9 @@
     justify-content: space-around;
     align-items: flex-start;
   }
+  &__country-message {
+    color: $text;
+  }
   &__item {
     display: flex;
     flex-direction: column;
