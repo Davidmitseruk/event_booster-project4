@@ -413,8 +413,9 @@ body.light-theme .hero__btn {
   align-items: center;
   position: absolute;
   right: 15px;
-  fill: #4c00fe;
+  color: #4c00fe;
   background-color: transparent;
+  font-size: 30px;
 }
 .signIn__title {
   font-weight: 600;
@@ -462,16 +463,6 @@ body.light-theme .hero__btn {
 }
 .signIn__field:focus {
   border: 3px solid #4c00fe;
-}
-.signIn__btn-eye {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  top: 38px;
-  left: 195px;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
 }
 .signIn__text {
   font-weight: 500;
@@ -584,8 +575,9 @@ body.light-theme .hero__btn {
   align-items: center;
   position: absolute;
   right: 15px;
-  fill: #4c00fe;
+  color: #4c00fe;
   background-color: transparent;
+  font-size: 30px;
 }
 .signUp__title {
   font-weight: 600;
@@ -633,19 +625,6 @@ body.light-theme .hero__btn {
 }
 .signUp__field:focus {
   border: 3px solid #4c00fe;
-}
-.signUp__btn-eye {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  top: 38px;
-  left: 195px;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-}
-.signUp__eye {
-  fill: none;
 }
 .signUp__btn-wrap {
   display: flex;
