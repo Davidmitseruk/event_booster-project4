@@ -40,9 +40,9 @@ const template = `<div class='backdrop__poster is-hidden'>
             </div>
             <div class='modal__block'>
                 <h2 class='modal__title'>PRICES</h2>
-                <p class='modal__text'> <img class="modal__icon" src="./ticket1.png" alt="tickets" > {{priceStandard}}</p>
+                <p class='modal__text'>{{priceStandard}}</p>
                 <button class="modal__poster-btn">BUY TICKETS</button>
-                <p class='modal__text'> <img class="modal__icon" src="./ticket1.png" alt="tickets" > {{priceVIP}}</p>
+                <p class='modal__text'>{{priceVIP}}</p>
                 <button class="modal__poster-btn">BUY TICKETS</button>
             </div>
             <div class='modal__btn-wrap'>
