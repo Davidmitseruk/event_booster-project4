@@ -40,8 +40,9 @@
     align-items: center;
     position: absolute;
     right: 15px;
-    fill: $modalText;
+    color: $modalText;
     background-color: transparent;
+    font-size: 30px;
   }
   &__title {
     font-weight: 600;
@@ -89,17 +90,6 @@
     &:focus {
       border: 3px solid $modalText;
     }
-  }
-  &__btn-eye {
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    top: 38px;
-    left: 195px;
-    cursor: pointer;
-  }
-  &__eye {
-    fill: none;
   }
   &__text {
     font-weight: 500;

@@ -21,7 +21,6 @@
   width: 600px;
   width: 90%;
   position: relative;
-  overflow-y: scroll;
 }
 
 .modal__close {
@@ -197,8 +196,6 @@
     &__icon {
       width: 29px;
       height: 20px;
-      background-color: aqua;
-      fill: black;
     }
   }
 }
